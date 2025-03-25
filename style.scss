@@ -7,21 +7,25 @@
     box-sizing: border-box;
 }
 
-html{
+html, body{
     height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 header {
     // border: variables.$red-border;
     @include mixins.flex-center;
     height: auto;
+    background-color: variables.$bg1;
+    margin: 0px;
     
 }
 
 .img-wrapper {
     // border: variables.$green-border;
     padding: 2px;
-    height: 50vh;
+    height: 100%;
     @include mixins.flex-center;
     overflow: hidden;
     
@@ -36,7 +40,7 @@ img {
 .half1 {
     // border: variables.$green-border;
     min-width: 33.3%;
-    height: 100%;
+    height: 50vh;
     @include mixins.flex-center;
 }
 
@@ -44,16 +48,16 @@ img {
     // border: variables.$green-border;
     @include mixins.flex-center;
     width: 66.6%;
-    height: 100%;
+    height: 50vh;
     padding: 20px 5px 20px 5px;
-    gap: 10px;
-    margin: 10px;
+    // gap: 10px;
+    
     
 }
 
 
 h2,h1 {
-    margin: 0;
+    margin: 8px;
     text-align: center;
 }
 
