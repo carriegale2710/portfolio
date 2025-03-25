@@ -91,6 +91,11 @@
   height: auto;
 }
 
+#projects {
+  padding: 5%;
+  height: auto;
+}
+
 * {
   box-sizing: border-box;
 }
