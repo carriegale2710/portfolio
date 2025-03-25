@@ -17,6 +17,7 @@ html, body{
     height: 100vh;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 
@@ -33,6 +34,9 @@ a {
     font-style: normal;
     padding: 2px 5px 2px 5px;
     color: colors.$black-olive;
+    &:hover {
+        color: colors.$mint;
+    }
 }
 
 .img-wrapper {
@@ -64,5 +68,11 @@ a {
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     margin: 25px;
+
+    &:hover {
+        color: colors.$mint;
+    }
 }
+
+
 
