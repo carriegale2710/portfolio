@@ -15,6 +15,11 @@
     justify-content: space-between;
     padding: 2%;
 
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+
     .nav-wrapper {
         // border: 1px solid darkblue;
         display: flex;
