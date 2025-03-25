@@ -17,7 +17,7 @@ header {
     // border: variables.$red-border;
     @include mixins.flex-center;
     height: auto;
-    background-color: variables.$bg1;
+    background-color: variables.$beige;
     margin: 0px;
     
 }
@@ -59,6 +59,7 @@ img {
 h2,h1 {
     margin: 8px;
     text-align: center;
+    color: variables.$black-olive;
 }
 
 .CTA-button{
