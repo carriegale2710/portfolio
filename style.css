@@ -197,18 +197,24 @@ a:hover {
   background-color: #d5d9b4;
   height: auto;
 }
+#about img {
+  width: 100%;
+}
+#about p {
+  padding: 5%;
+}
 
 #projects {
-  padding: 5%;
   height: fit-content;
   background-color: black;
+  padding: 80px 0 150px 0;
 }
 #projects h1 {
   color: #d5d9b4;
 }
 
 .project-card {
-  padding: 20px;
+  padding: 30px;
   gap: 10px;
   display: flex;
   flex-direction: row;
@@ -228,7 +234,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #contact-wrapper {
@@ -273,7 +279,13 @@ html, body {
   scroll-behavior: smooth;
 }
 
-h2, h1 {
+h1 {
+  padding: 80px 5%;
+  text-align: center;
+  color: #2f3328;
+}
+
+h2 {
   margin: 20px;
   text-align: center;
   color: #2f3328;

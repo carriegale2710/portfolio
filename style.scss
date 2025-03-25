@@ -29,11 +29,18 @@ html, body{
 }
 
 
-h2,h1 {
+h1 {
+    padding: 80px 5% ;
+    text-align: center;
+    color: colors.$black-olive;
+}
+
+h2 {
     margin: 20px;
     text-align: center;
     color: colors.$black-olive;
 }
+
 
 img, button{
     border-radius: 20px;
