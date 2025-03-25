@@ -1,0 +1,58 @@
+
+@use "./mixins";
+
+.half1 {
+    // border: variables.$green-border;
+    min-width: 33.3%;
+    max-height: 50vh;
+    @include mixins.flex-center;
+    
+    
+    
+}
+
+
+.half2 {
+    // border: variables.$green-border;
+    @include mixins.flex-center;
+    width: 100%;
+    height: auto;
+    // padding: 20px 5px 20px 5px;
+    // gap: 10px;
+    
+    // h2:hover {
+    //     content: "+ UX/UI Designer";
+    // }
+}
+
+
+.img-wrapper {
+    padding: 2px;
+    max-height: 100%;
+    // width: 100%;
+    @include mixins.flex-center;
+    overflow: hidden;
+    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        width: auto;
+        object-fit: contain;
+        
+    }
+}
+
+.text-wrapper {
+    height: 100%;
+    width: 100%;
+    @include mixins.flex-center;
+    
+
+    p{
+        max-width: 400px;
+        max-height: 100%;
+        height: auto;
+        width: auto; 
+    }
+}
