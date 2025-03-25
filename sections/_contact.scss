@@ -8,7 +8,6 @@
    height: 100vh;
    @include mixins.flex-center;
    justify-content: center;
-  
 }
 
 #contact-wrapper {
@@ -25,6 +24,5 @@
         width: 200px;
         padding: 15px;
         @include mixins.flex-center;
-        
     }
 }
