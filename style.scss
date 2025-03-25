@@ -40,6 +40,31 @@ a {
     }
 }
 
+.half1 {
+    // border: variables.$green-border;
+    min-width: 33.3%;
+    height: 50vh;
+    @include mixins.flex-center;
+    
+    
+    
+}
+
+
+.half2 {
+    // border: variables.$green-border;
+    @include mixins.flex-center;
+    width: auto;
+    height: auto;
+    // padding: 20px 5px 20px 5px;
+    // gap: 10px;
+    
+    // h2:hover {
+    //     content: "+ UX/UI Designer";
+    // }
+}
+
+
 .img-wrapper {
     padding: 2px;
     height: 100%;
@@ -59,7 +84,7 @@ a {
 
 .text-wrapper {
     height: 100%;
-    // width: 100%;
+    width: 100%;
     
     p{
         max-width: 100%;

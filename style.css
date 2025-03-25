@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+.roboto-mono--normal {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .open-sans--normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -47,13 +54,6 @@
 }
 .space-mono--bold--italic {
   font-style: italic;
-}
-
-.roboto-mono--normal {
-  font-family: "Roboto Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
 }
 
 #navbar {
@@ -81,27 +81,14 @@
   height: auto;
   margin: 0px;
 }
-
-.half1 {
-  min-width: 33.3%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.half2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
+#header .fullHeight {
   height: 45vh;
 }
 
 #about {
   padding: 5%;
+  background-color: #d5d9b4;
+  height: auto;
 }
 
 * {
@@ -133,6 +120,24 @@ a:hover {
   color: #70bd9a;
 }
 
+.half1 {
+  min-width: 33.3%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.half2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
 .img-wrapper {
   padding: 2px;
   height: 100%;
@@ -152,6 +157,7 @@ a:hover {
 
 .text-wrapper {
   height: 100%;
+  width: 100%;
 }
 .text-wrapper p {
   max-width: 100%;
