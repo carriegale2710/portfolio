@@ -4,13 +4,20 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
+.whole-wrap{
+    @include mixins.flex-center(row);
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .half1 {
     // border: variables.$green-border;
-    min-width: 33.3%;
-    max-height: 50vh;
+    width: auto;
+    height: fit-content;
+    min-width: 20%;
+    max-height: 100%;
     @include mixins.flex-center;
-    
+    padding: 2%;
     
     
 }
@@ -19,7 +26,7 @@
 .half2 {
     // border: variables.$green-border;
     @include mixins.flex-center;
-    width: 100%;
+    min-width: 50%;
     height: auto;
     // padding: 20px 5px 20px 5px;
     // gap: 10px;
@@ -33,16 +40,17 @@
 .img-wrapper {
     padding: 2px;
     max-height: 100%;
-    // width: 100%;
+    max-width: 100%;
     @include mixins.flex-center;
     overflow: hidden;
+    
     
     img {
         max-width: 100%;
         max-height: 100%;
         height: auto;
-        width: auto;
-        object-fit: contain;
+        width: 100%;
+        object-fit:contain;
         
     }
 }
@@ -63,10 +71,13 @@
 
 
 .caption-wrapper {
-        border: colors.$green-border;
+        // border: colors.$green-border;
         @include mixins.flex-center(row);
         justify-content: space-between;
         text-align: left;
         width:100%;
         
+        
     }
+
+    

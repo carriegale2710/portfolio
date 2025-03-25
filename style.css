@@ -3,17 +3,20 @@
   font-family: "Silkscreen", sans-serif;
   font-style: normal;
   font-weight: 400;
+  margin: 0;
 }
 .silkscreen.silkscreen-bold {
   font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-style: normal;
+  margin: 0;
 }
 
 .vt323-regular {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 .dotgothic16-regular {
@@ -55,13 +58,25 @@
   font-style: italic;
 }
 
+.whole-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .half1 {
-  min-width: 33.3%;
-  max-height: 50vh;
+  width: auto;
+  height: fit-content;
+  min-width: 20%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 2%;
 }
 
 .half2 {
@@ -69,13 +84,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  min-width: 50%;
   height: auto;
 }
 
 .img-wrapper {
   padding: 2px;
   max-height: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +102,7 @@
   max-width: 100%;
   max-height: 100%;
   height: auto;
-  width: auto;
+  width: 100%;
   object-fit: contain;
 }
 
@@ -106,7 +122,6 @@
 }
 
 .caption-wrapper {
-  border: 1px dotted green;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -134,14 +149,13 @@ a:hover {
 
 .CTA-button {
   text-align: center;
-  color: white;
-  background-color: black;
+  color: #2f3328;
   border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-  margin: 25px;
+  padding: 10px 20px 10px 20px;
 }
 .CTA-button:hover {
-  color: #70bd9a;
+  color: #d5d9b4;
+  background-color: #2f3328;
 }
 
 #navbar {
@@ -166,22 +180,37 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
+  align-self: center;
+  height: 100%;
+  width: 100%;
   margin: 0px;
 }
 #header .fullHeight {
   height: 45vh;
 }
+#header #button-wrap {
+  margin: 10% 15% 10% 15%;
+}
 
 #about {
   padding: 5%;
   background-color: #d5d9b4;
-  height: auto;
+  height: fit-content;
 }
 
 #projects {
   padding: 5%;
-  height: auto;
+  height: fit-content;
+}
+
+.project-card {
+  padding: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 * {
@@ -196,9 +225,13 @@ html, body {
 }
 
 h2, h1 {
-  margin: 15px;
+  margin: 20px;
   text-align: center;
   color: #2f3328;
+}
+
+img, button {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

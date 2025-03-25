@@ -26,14 +26,15 @@ a {
 
 .CTA-button{
     text-align: center;
-    color: white;
-    background-color: black;
+    color: colors.$black-olive;
+    
     border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-    margin: 25px;
+    padding: 10px 20px 10px 20px;
+    
 
     &:hover {
-        color: colors.$mint;
+        color: colors.$beige;
+        background-color: colors.$black-olive;
     }
 }
 

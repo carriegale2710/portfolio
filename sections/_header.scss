@@ -7,11 +7,19 @@
 #header {
     // border: variables.$red-border;
     @include mixins.flex-center;
-    height: auto;
+    align-self: center;
+    height: 100%;
+    width: 100%;
     // background-color: colors.$mint;
     margin: 0px;
 
+
     .fullHeight{height: 45vh;}
+    
+    #button-wrap{
+        margin: 10% 15% 10% 15%;
+        
+    }
     
 }
 
