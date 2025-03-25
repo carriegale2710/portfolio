@@ -8,6 +8,8 @@
 #projects {
     padding: 5%;
     height: fit-content;
+    background-color: colors.$black;
+    h1 {color: colors.$beige;}
 
     
 }
@@ -18,5 +20,11 @@
     gap: 10px;
     @include mixins.flex-center(row);
     flex-wrap: wrap;
+    
+    
 
+}
+
+.project-title {
+    color: colors.$beige;
 }
