@@ -5,17 +5,14 @@
 
 
 #header {
-    // border: variables.$red-border;
+    // border: red 1px solid;
     @include mixins.flex-center;
     align-self: center;
-    height: 100%;
+    height: fit-content;
     width: 100%;
-    // background-color: colors.$mint;
     margin: 0px;
+    padding: 0px 0 150px 0;
 
-
-    .fullHeight{height: 45vh;}
-    
     #button-wrap{
         margin: 10% 15% 10% 15%;
         

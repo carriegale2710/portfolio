@@ -10,21 +10,23 @@
 
 .half1 {
     // border: variables.$green-border;
-    width: auto;
+    width: 50%;
     height: fit-content;
-    min-width: 20%;
+    
     max-height: 100%;
     @include mixins.flex-center;
     padding: 2%;
-    
-    
+    // min-width: 50vw;
+    // float: left;
+    justify-items: center
+
 }
 
 
 .half2 {
     // border: variables.$green-border;
     @include mixins.flex-center;
-    min-width: 50%;
+    width: fit-content;
     height: auto;
     // padding: 20px 5px 20px 5px;
     // gap: 10px;
@@ -36,34 +38,38 @@
 
 
 .img-wrapper {
-    padding: 2px;
     max-height: 100%;
     max-width: 100%;
     @include mixins.flex-center;
     overflow: hidden;
     
     
+    
     img {
+        
         max-width: 100%;
         max-height: 100%;
         height: auto;
-        width: 100%;
+        width: fit-content;
         object-fit:contain;
+        justify-self: center;
+        align-self: center;
         
     }
 }
 
 .text-wrapper {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     @include mixins.flex-center;
+    padding: 80px 0 150px 20px;
     
 
     p{
         max-width: 400px;
         max-height: 100%;
-        height: auto;
-        width: auto; 
+        height: fit-content;
+        width:fit-content; 
     }
 }
 
