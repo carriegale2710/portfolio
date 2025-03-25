@@ -9,7 +9,7 @@
 
 
 
-nav {
+#navbar {
     // border: 1px dotted red;
     @include mixins.flex-center(row);
     justify-content: space-between;

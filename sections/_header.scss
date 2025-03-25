@@ -4,7 +4,7 @@
 @use "../partials/mixins";
 
 
-header {
+#header {
     // border: variables.$red-border;
     @include mixins.flex-center;
     height: auto;
