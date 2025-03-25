@@ -5,12 +5,15 @@
 @use "./partials/mixins";
 @use "./partials/wrappers";
 @use "./partials/clickables";
+@use "./partials/media-queries";
 
 // import sections
 @use "./sections/navbar";
 @use "./sections/header";
 @use "./sections/about";
 @use "./sections/projects";
+@use "./sections/contact";
+@use "./sections/footer";
 
 
 *{

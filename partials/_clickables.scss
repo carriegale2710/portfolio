@@ -1,9 +1,12 @@
 
 
 //import partials
-@use "../partials/colors";
-@use "../partials/fonts";
-@use "../partials/mixins";
+//import partials
+@use "./colors";
+@use "./fonts";
+@use "./mixins";
+@use "./wrappers";
+@use "./media-queries";
 
 
 a {

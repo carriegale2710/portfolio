@@ -1,8 +1,10 @@
-
 //import partials
-@use "../partials/colors";
-@use "../partials/fonts";
-@use "../partials/mixins";
+@use "./colors";
+@use "./fonts";
+@use "./mixins";
+@use "./wrappers";
+@use "./clickables";
+@use "./media-queries";
 
 .whole-wrap{
     @include mixins.flex-center(row);
