@@ -1,28 +1,44 @@
 
-// @use "./partials/variables"
+@use "./partials/variables";
+@use "./partials/mixins";
 
-$red-border :  1px dotted red;
-$green-border :  1px dotted green;
 
 *{
     box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-
-    .img-wrapper {
-        border: $red-border;
-        padding: 2px;
-        
-    }
+    border: variables.$red-border;
+    @include mixins.flex-center;
     
-    .left-section {
-        border: $green-border;
-        width: 33.3%;
-        height: fit-content;
-        width: 310px;
-    }
+    
 }
 
+.img-wrapper {
+    border: variables.$green-border;
+    padding: 2px;
+    @include mixins.flex-center;
+    overflow: hidden;
+    
+}
+
+img {
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.left-section {
+    border: variables.$green-border;
+    min-width: 33.3%;
+    height: 100%;
+    @include mixins.flex-center;
+}
+
+.right-section {
+    border: variables.$green-border;
+    
+    width: 66.6%;
+    height: 100%;
+    padding: 50px;
+}

@@ -3,18 +3,43 @@
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-}
-header .img-wrapper {
   border: 1px dotted red;
-  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header .left-section {
+
+.img-wrapper {
   border: 1px dotted green;
-  width: 33.3%;
-  height: fit-content;
-  width: 310px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+.left-section {
+  border: 1px dotted green;
+  min-width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  border: 1px dotted green;
+  width: 66.6%;
+  height: 100%;
+  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
