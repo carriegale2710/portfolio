@@ -58,29 +58,27 @@
   
 //Space Mono: CSS classes
 
-.space-mono-regular {
+.space-mono--regular {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
+
+    &--italic {
+        font-style: italic;
+    }
+    
 }
 
-.space-mono-bold {
+.space-mono--bold {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
+
+    &--italic {
+        font-style: italic;
+    }
 }
 
-.space-mono-regular-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.space-mono-bold-italic {
-    font-family: "Space Mono", monospace;
-    font-weight: 700;
-    font-style: italic;
-}
 
 //Roboto Mono: CSS class for a variable style
 

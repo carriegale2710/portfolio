@@ -10,37 +10,32 @@
 
 
 nav {
-    border: 1px dotted red;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    // border: 1px dotted red;
+    @include mixins.flex-center(row);
     justify-content: space-between;
-    padding: 10px;
+    padding: 2%;
 
     .nav-wrapper {
-        border: 1px solid darkblue;
+        // border: 1px solid darkblue;
         display: flex;
         flex-direction: row;
         gap: 5px;
-        width:33.3%;
         height: 100%;
-        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
     }
-}
 
-
-
-.title {
-    justify-self: center;
-    border: 1px solid darkblue;
-
+    // SYNTAX: @media (condition) {CSS rules go here}
     
+    
+    // @media only screen and (min-width: 600px) {}
+
+    // @media only screen and (min-width: 768px) {}
 }
 
-a {
-    text-decoration: none;
-    
-}
+
+
+
 
 
 
