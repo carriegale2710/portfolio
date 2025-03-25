@@ -1,11 +1,10 @@
 /* SCSS HEX */
 .silkscreen-regular {
   font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
-
-.silkscreen-bold {
+.silkscreen.silkscreen-bold {
   font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -46,7 +45,6 @@
 .space-mono--regular--italic {
   font-style: italic;
 }
-
 .space-mono--bold {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -127,7 +125,7 @@ a:hover {
 
 .half1 {
   min-width: 33.3%;
-  height: 50vh;
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,7 +143,7 @@ a:hover {
 
 .img-wrapper {
   padding: 2px;
-  height: 100%;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
