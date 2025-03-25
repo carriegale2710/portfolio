@@ -134,7 +134,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -158,9 +158,13 @@ a:hover {
 .text-wrapper {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .text-wrapper p {
-  max-width: 100%;
+  max-width: 400px;
   max-height: 100%;
   height: auto;
   width: auto;

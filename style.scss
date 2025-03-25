@@ -54,7 +54,7 @@ a {
 .half2 {
     // border: variables.$green-border;
     @include mixins.flex-center;
-    width: auto;
+    width: 100%;
     height: auto;
     // padding: 20px 5px 20px 5px;
     // gap: 10px;
@@ -85,9 +85,11 @@ a {
 .text-wrapper {
     height: 100%;
     width: 100%;
+    @include mixins.flex-center;
     
+
     p{
-        max-width: 100%;
+        max-width: 400px;
         max-height: 100%;
         height: auto;
         width: auto; 
