@@ -45,7 +45,14 @@ img {
   align-items: center;
   width: 66.6%;
   height: 100%;
-  padding: 5px;
+  padding: 20px 5px 20px 5px;
+  gap: 10px;
+  margin: 10px;
+}
+
+h2, h1 {
+  margin: 0;
+  text-align: center;
 }
 
 .CTA-button {
@@ -54,6 +61,7 @@ img {
   background-color: black;
   border-radius: 5px;
   padding: 10px 15px 10px 15px;
+  margin: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
