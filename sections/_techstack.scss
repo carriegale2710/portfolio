@@ -2,3 +2,28 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
+
+
+
+#techstack {
+    
+    
+}
+
+#stacks {
+    @include mixins.flex-center(row);
+    max-width: 100%;
+    padding: 5% 5% 15% 5%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.stack-card {
+    @include mixins.flex-center;
+    max-width: 100%;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}

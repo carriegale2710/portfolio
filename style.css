@@ -277,6 +277,29 @@ a:hover {
   padding: 2%;
 }
 
+#stacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 5% 5% 15% 5%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.stack-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
 * {
   box-sizing: border-box;
 }
