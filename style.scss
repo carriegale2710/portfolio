@@ -4,6 +4,7 @@
 @use "./partials/fonts";
 @use "./partials/mixins";
 @use "./partials/wrappers";
+@use "./partials/clickables";
 
 // import sections
 @use "./sections/navbar";
@@ -29,37 +30,3 @@ h2,h1 {
     text-align: center;
     color: colors.$black-olive;
 }
-
-a {
-    text-decoration: none;
-    font-family: "Space Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    padding: 2px 5px 2px 5px;
-    color: colors.$black-olive;
-    &:hover {
-        color: colors.$mint;
-    }
-}
-
-
-#logo {
-    height: 20px;
-
-}
-
-.CTA-button{
-    text-align: center;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    padding: 10px 15px 10px 15px;
-    margin: 25px;
-
-    &:hover {
-        color: colors.$mint;
-    }
-}
-
-
-

@@ -1,5 +1,9 @@
 
-@use "./mixins";
+//import partials
+@use "../partials/colors";
+@use "../partials/fonts";
+@use "../partials/mixins";
+
 
 .half1 {
     // border: variables.$green-border;
@@ -56,3 +60,13 @@
         width: auto; 
     }
 }
+
+
+.caption-wrapper {
+        border: colors.$green-border;
+        @include mixins.flex-center(row);
+        justify-content: space-between;
+        text-align: left;
+        width:100%;
+        
+    }
