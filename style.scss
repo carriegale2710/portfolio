@@ -1,4 +1,41 @@
 
 nav {
     border: 1px dotted red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .nav-wrapper {
+        border: 1px solid darkblue;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        width:33.3%;
+        height: 100%;
+        flex-wrap: wrap;
+        
+        
+    }
+    
+    
+
+    
+
 }
+
+
+.title {
+    justify-self: center;
+    border: 1px solid darkblue;
+
+    
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+
