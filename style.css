@@ -2,17 +2,21 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 header {
-  border: 1px dotted red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .img-wrapper {
-  border: 1px dotted green;
   padding: 2px;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,11 +26,10 @@ header {
 
 img {
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
-.left-section {
-  border: 1px dotted green;
+.half1 {
   min-width: 33.3%;
   height: 100%;
   display: flex;
@@ -35,11 +38,22 @@ img {
   align-items: center;
 }
 
-.right-section {
-  border: 1px dotted green;
+.half2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 66.6%;
   height: 100%;
-  padding: 50px;
+  padding: 5px;
+}
+
+.CTA-button {
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

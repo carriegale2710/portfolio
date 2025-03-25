@@ -7,16 +7,21 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100vh;
+}
+
 header {
-    border: variables.$red-border;
+    // border: variables.$red-border;
     @include mixins.flex-center;
-    
+    height: auto;
     
 }
 
 .img-wrapper {
-    border: variables.$green-border;
+    // border: variables.$green-border;
     padding: 2px;
+    height: 50vh;
     @include mixins.flex-center;
     overflow: hidden;
     
@@ -24,21 +29,30 @@ header {
 
 img {
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 
-.left-section {
-    border: variables.$green-border;
+.half1 {
+    // border: variables.$green-border;
     min-width: 33.3%;
     height: 100%;
     @include mixins.flex-center;
 }
 
-.right-section {
-    border: variables.$green-border;
-    
+.half2 {
+    // border: variables.$green-border;
+    @include mixins.flex-center;
     width: 66.6%;
     height: 100%;
-    padding: 50px;
+    padding: 5px;
 }
+
+.CTA-button{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
