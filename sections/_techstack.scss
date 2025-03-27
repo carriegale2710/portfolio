@@ -4,25 +4,21 @@
 @use "../partials/mixins";
 
 
-#stack {
-    @include mixins.flex-center(row);
-    flex-wrap: wrap;
+#techstack-section {
     max-width: 100%;
     padding: 5% 5% 15% 5%;
     justify-content: space-evenly;
 }
 
-.stack-card {
-    @include mixins.flex-center;
+.techstack {
+    @include mixins.flex-center(row);
+    flex-wrap: wrap;
     
-    width: 100px;
-    height: fit-content;
-    padding: 100px;
-}
-
-i{
-    scale: 300%;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
+    &__software{
+        @include mixins.flex-center;
+        flex-wrap: wrap;
+        width: fit-content;
+        height: fit-content;
+        padding: 100px;
+    }
 }

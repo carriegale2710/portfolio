@@ -277,32 +277,28 @@ nav .nav-wrapper {
   padding: 2%;
 }
 
-#stack {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+#techstack-section {
   max-width: 100%;
   padding: 5% 5% 15% 5%;
   justify-content: space-evenly;
 }
 
-.stack-card {
+.techstack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.techstack__software {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: fit-content;
-  padding: 100px;
-}
-
-i {
-  scale: 300%;
+  flex-wrap: wrap;
   width: fit-content;
   height: fit-content;
-  padding: 10px;
+  padding: 100px;
 }
 
 * {
