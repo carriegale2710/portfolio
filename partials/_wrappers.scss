@@ -38,29 +38,27 @@
 
 
 .img-wrapper {
-    max-height: 100%;
-    max-width: 100%;
+    @include mixins.max100;
     @include mixins.flex-center;
     overflow: hidden;
     
     
     
-    img {
-        
-        max-width: 100%;
-        max-height: 100%;
-        height: auto;
-        width: fit-content;
-        object-fit:contain;
-        justify-self: center;
-        align-self: center;
-        
-    }
+    
+}
+
+img {
+    @include mixins.max100;
+    height: auto;
+    width: fit-content;
+    object-fit:contain;
+    justify-self: center;
+    align-self: center;
+    
 }
 
 .text-wrapper {
-    max-height: 100%;
-    max-width: 100%;
+    @include mixins.max100;
     @include mixins.flex-center;
     padding: 80px 0 150px 20px;
     

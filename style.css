@@ -97,9 +97,10 @@
   align-items: center;
   overflow: hidden;
 }
-.img-wrapper img {
-  max-width: 100%;
+
+img {
   max-height: 100%;
+  max-width: 100%;
   height: auto;
   width: fit-content;
   object-fit: contain;
@@ -289,16 +290,19 @@ nav .nav-wrapper {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  height: 100px;
+  width: 100px;
 }
-.techstack__software {
+.techstack__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: fit-content;
+  max-height: 100%;
+  max-width: 100%;
   height: fit-content;
-  padding: 100px;
+  width: fit-content;
 }
 
 * {
@@ -324,7 +328,14 @@ h2 {
   color: #2f3328;
 }
 
-img, button {
+button {
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: scale-down;
+  padding: 10px;
   border-radius: 20px;
 }
 

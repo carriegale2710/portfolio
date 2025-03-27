@@ -8,7 +8,7 @@
 @use "./partials/media-queries";
 
 // import sections
-@use "./sections/navbar";
+@use "./sections/nav";
 @use "./sections/header";
 @use "./sections/about";
 @use "./sections/projects";
@@ -55,7 +55,16 @@ h2 {
 }
 
 
-img, button{
+button{
     border-radius: 20px;
 }
+
+img{
+    max-width: 100%;
+    object-fit: scale-down;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
 
