@@ -65,13 +65,16 @@ img {
 
 
 .caption-wrapper {
-        // border: colors.$green-border;
-        @include mixins.flex-center(row);
-        justify-content: space-between;
-        text-align: left;
-        width:100%;
-        
-        
-    }
+    // border: colors.$green-border;
+    @include mixins.flex-center(row);
+    justify-content: space-between;
+    text-align: left;
+    width:100%;
+}
+
+#button-wrap{
+    margin: 10% 15% 10% 15%;
+    
+}
 
     

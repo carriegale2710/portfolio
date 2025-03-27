@@ -146,6 +146,10 @@ img {
   width: 100%;
 }
 
+#button-wrap {
+  margin: 10% 15% 10% 15%;
+}
+
 a {
   text-decoration: none;
   font-family: "Space Mono", monospace;
@@ -179,19 +183,22 @@ nav {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 2%;
+  padding: 1vh;
+  height: 5vh;
+  background-color: white;
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: white;
 }
-nav .nav-wrapper {
+
+.nav-wrapper {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  height: 100%;
+  height: fit-content;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 header {
@@ -200,13 +207,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 96vh;
+  height: 98vh;
   width: 100vw;
   margin: 0px;
-}
-
-#button-wrap {
-  margin: 10% 15% 10% 15%;
 }
 
 #about {

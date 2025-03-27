@@ -8,18 +8,12 @@ header {
     // border: red 1px solid;
     @include mixins.flex-center(row);
     flex-wrap: wrap;
-    height: 96vh;
+    height: 98vh;
     width: 100vw;
     margin: 0px;
-    
-  
-
 }
 
- #button-wrap{
-        margin: 10% 15% 10% 15%;
-        
-    }
+ 
     
 
 

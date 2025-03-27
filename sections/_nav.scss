@@ -8,26 +8,27 @@ nav {
     // border: 1px dotted red;
     @include mixins.flex-center(row);
     justify-content: space-between;
-    padding: 2%;
-
+    padding: 1vh;
+    height: 5vh;
+    background-color: white;
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: white;
 
-    .nav-wrapper {
+    
+}
+
+
+.nav-wrapper {
         // border: 1px solid darkblue;
         display: flex;
         flex-direction: row;
         gap: 5px;
-        height: 100%;
+        height: fit-content;
         max-width: 100%;
         justify-content: space-between;
+        align-items: center;
     }
-}
-
-
-
 
 
 
