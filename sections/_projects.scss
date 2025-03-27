@@ -9,15 +9,13 @@
     height: fit-content;
     background-color: colors.$black;
     h1 {color: colors.$beige;}
-    padding: 80px 0 150px 0; 
 }
 
 .project-card {
     // border: 2px solid red;
     padding: 30px;
     gap: 10px;
-    @include mixins.flex-center(row);
-    flex-wrap: wrap;
+    @include mixins.flex-center;
 }
 
 .project-title {

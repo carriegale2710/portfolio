@@ -10,8 +10,8 @@
 
 .half1 {
     // border: variables.$green-border;
-    width: 50%;
-    height: fit-content;
+    // width: 50%;
+    height:auto;
     
     max-height: 100%;
     @include mixins.flex-center;
@@ -27,7 +27,7 @@
     // border: variables.$green-border;
     @include mixins.flex-center;
     width: fit-content;
-    height: auto;
+    height: fit-content;
     // padding: 20px 5px 20px 5px;
     // gap: 10px;
     
@@ -61,14 +61,6 @@ img {
     @include mixins.max100;
     @include mixins.flex-center;
     padding: 80px 0 150px 20px;
-    
-
-    p{
-        max-width: 400px;
-        max-height: 100%;
-        height: fit-content;
-        width:fit-content; 
-    }
 }
 
 

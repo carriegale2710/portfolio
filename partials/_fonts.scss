@@ -1,7 +1,23 @@
 
+@use "./colors";
+
 
 
 // HEADING FONTS //
+
+
+
+h1 {
+    padding: 80px 5% ;
+    text-align: center;
+    color: colors.$black-olive;
+    
+}
+
+
+
+
+
 //  Silkscreen: CSS classes
 
 .silkscreen {
@@ -25,6 +41,15 @@
 
 //SUBHEADING FONTS//
 
+
+h2 {
+    margin: 20px;
+    text-align: center;
+    color: colors.$black-olive;
+}
+
+
+
 // VT323: CSS class
 
 .vt323-regular {
@@ -47,6 +72,12 @@
 ///////////// BODY FONTS ///////////
 
 
+p{
+    max-width: 600px;
+    max-height: 100%;
+    height: fit-content;
+    width:fit-content;
+}
 
 
 //Roboto Mono: CSS class for a variable style

@@ -4,28 +4,19 @@
 @use "../partials/mixins";
 
 
-#techstack-section {
-    max-width: 100%;
-    padding: 5% 5% 15% 5%;
-    justify-content: space-evenly;
-}
-
 .techstack {
     @include mixins.flex-center(row);
+    max-width: 100%;
+    padding: 5% 10%;
     flex-wrap: wrap;
-    height: 100px ;
-    width: 100px;
+    gap: 30px;
+    margin-bottom: 60px;
     
     &__item{
-        @include mixins.flex-center;
-        flex-wrap: wrap;
-        max-height: 100%;
-        max-width: 100%;
-        height: fit-content;
-        width: fit-content;
-        
+    @include mixins.flex-center;
+    
 
-        
+    
     }
 }
 

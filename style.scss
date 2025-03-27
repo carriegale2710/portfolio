@@ -35,24 +35,11 @@
 }
 
 html, body{
-    height: 100vh;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
 
-
-h1 {
-    padding: 80px 5% ;
-    text-align: center;
-    color: colors.$black-olive;
-}
-
-h2 {
-    margin: 20px;
-    text-align: center;
-    color: colors.$black-olive;
-}
 
 
 button{
@@ -60,11 +47,10 @@ button{
 }
 
 img{
-    max-width: 100%;
-    object-fit: scale-down;
-    padding: 10px;
+
     border-radius: 20px;
-    
+    @include mixins.max100;
+    height: auto;
+    width: fit-content;
+    object-fit:contain;
 }
-
-
