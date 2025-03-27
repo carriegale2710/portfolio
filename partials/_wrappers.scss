@@ -2,11 +2,7 @@
 
 @use "./mixins";
 
-.whole-wrap{
-    @include mixins.flex-center(row);
-    flex-wrap: wrap;
-    width: 100%;
-}
+
 
 .half1 {
     // border: variables.$green-border;
@@ -37,9 +33,11 @@
 }
 
 
+
 .img-wrapper {
     @include mixins.max100;
     @include mixins.flex-center;
+    
     overflow: hidden;
     
     
@@ -52,16 +50,9 @@ img {
     height: auto;
     width: fit-content;
     object-fit:contain;
-    justify-self: center;
-    align-self: center;
-    
+    margin: 8px;
 }
 
-.text-wrapper {
-    @include mixins.max100;
-    @include mixins.flex-center;
-    padding: 80px 0 150px 20px;
-}
 
 
 .caption-wrapper {

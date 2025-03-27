@@ -8,9 +8,10 @@
 
 #footer {
     // border: 1px dotted red;
-    @include mixins.flex-center(row);
-    justify-content: space-between;
-    padding: 2%;
+    @include mixins.flex-center;
+    text-align: center;
+    padding: 2vw;
+    gap: 2vw;
 }
 
 
