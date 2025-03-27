@@ -7,16 +7,13 @@
 .techstack {
     @include mixins.flex-center(row);
     max-width: 100%;
-    padding: 5% 10%;
+    padding: 10% 5% ;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     
     &__item{
     @include mixins.flex-center;
-    
-
-    
     }
 }
 

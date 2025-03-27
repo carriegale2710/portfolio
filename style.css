@@ -292,10 +292,10 @@ header {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  padding: 5% 10%;
+  padding: 10% 5%;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .techstack__item {
   display: flex;
