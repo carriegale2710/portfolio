@@ -277,14 +277,14 @@ a:hover {
   padding: 2%;
 }
 
-#stacks {
+#stack {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 100%;
   padding: 5% 5% 15% 5%;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -293,11 +293,16 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  width: 100px;
+  height: fit-content;
+  padding: 100px;
+}
+
+i {
+  scale: 300%;
   width: fit-content;
   height: fit-content;
   padding: 10px;
-  flex-wrap: wrap;
 }
 
 * {
