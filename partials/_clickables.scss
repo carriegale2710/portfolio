@@ -7,18 +7,12 @@
 
 
 a {
-    //font
-    text-decoration: none;
-    font-family: "Space Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-
     //spacing
     padding: 2px 5px 2px 5px;
-
     //colors
     color: colors.$black-olive;
-
+    //gets rid of underline
+    text-decoration: none;
     //microinteractions
     &:hover {
         color: colors.$mint;
@@ -29,14 +23,11 @@ a {
 .CTA-button{
     //alignment
     text-align: center;
-    
     //spacing
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
-    
     //colors
     color: colors.$black-olive;
-    
     //microinteractions
     &:hover {
         color: colors.$beige;
@@ -46,3 +37,5 @@ a {
 
 
 
+
+    

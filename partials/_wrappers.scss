@@ -7,30 +7,32 @@
     //sizing
     max-height: 100%;
     height:auto;
-
     //alignment
     @include mixins.flex-center;
     justify-items: center;
-    
     //spacing
     padding: 2%;
 }
 
 
 .half2 {
-    
     //alignment
     @include mixins.flex-center;
-
     //sizing
     width: fit-content;
     height: fit-content;
-    
     //microinteraction idea for later:
         //h2:hover {content: "+ UX/UI Designer";}
 }
 
-
+.caption-wrapper {
+    //alignment
+    @include mixins.flex-center(row);
+    justify-content: space-between;
+    text-align: left;
+    //sizing
+    width:100%;
+}
 
 .img-wrapper {
     //sizing
@@ -40,34 +42,9 @@
     @include mixins.flex-center;
 }
 
-img {
-    //sizing
-    @include mixins.max100;
-    height: auto;
-    width: fit-content;
-    object-fit:contain;
 
-    //spacing
-    margin: 8px;
-}
-
-
-
-.caption-wrapper {
-
-    //alignment
-    @include mixins.flex-center(row);
-    justify-content: space-between;
-    text-align: left;
-
-    //sizing
-    width:100%;
-}
 
 #button-wrap{
-    
     //spacing
     margin: 10% 15% 10% 15%;
 }
-
-    
