@@ -1,12 +1,9 @@
 
+//Import partials
 @use "./colors";
 
 
-
-// HEADING FONTS //
-
-
-
+//applied to all main headings 
 h1 {
     padding: 80px 5% ;
     text-align: center;
@@ -15,19 +12,37 @@ h1 {
 }
 
 
+//applies to all subheadings
+h2 {
+    margin: 20px;
+    text-align: center;
+    color: colors.$black-olive;
+}
+
+//applies to all paragraphs
+p{
+    max-width: 30%;
+    max-height: 100%;
+    height: fit-content;
+    width:fit-content;
+}
 
 
 
-//  Silkscreen: CSS classes
 
+///////// MAIN HEADING FONTS ///////////////////////////////////////////////////////
+
+
+//Font 1: Silkscreen
 .silkscreen {
-    &-regular {
+
+    &--regular {
         font-family: "Silkscreen", sans-serif;
         font-style: normal;
         font-weight: 400; 
         margin: 0;
     }
-    &.silkscreen-bold {
+    &--bold {
         font-family: "Silkscreen", sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -37,31 +52,20 @@ h1 {
 
 
 
+///////// SUBHEADING FONTS ///////////////////////////////////////////////////////
 
 
-//SUBHEADING FONTS//
-
-
-h2 {
-    margin: 20px;
-    text-align: center;
-    color: colors.$black-olive;
-}
-
-
-
-// VT323: CSS class
-
-.vt323-regular {
+//Font 1: VT323
+.vt323--regular {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
     margin: 0;
 }
 
-//DotGothic16: CSS class
 
-.dotgothic16-regular {
+//Font 2: DotGothic16
+.dotgothic16--regular {
     font-family: "DotGothic16", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -69,19 +73,12 @@ h2 {
 }
 
 
-///////////// BODY FONTS ///////////
+///////// BODY FONTS ///////////////////////////////////////////////////////
 
 
-p{
-    max-width: 30%;
-    max-height: 100%;
-    height: fit-content;
-    width:fit-content;
-}
+//Font 1: Roboto Mono 
 
-
-//Roboto Mono: CSS class for a variable style
-
+//CSS class for a variable style
 // <weight>: Use a value from 100 to 700
 // <uniquifier>: Use a unique and descriptive class name
 
@@ -93,8 +90,7 @@ p{
 }
 
 
-
-//Open Sans//
+//Font 2: Open Sans//
 
 // <weight>: Use a value from 300 to 800
 // <uniquifier>: Use a unique and descriptive class name
@@ -110,8 +106,7 @@ p{
 }
 
 
-
-//Space Mono: CSS classes
+//Font 3: Space Mono
 
 .space-mono{
     &--regular {

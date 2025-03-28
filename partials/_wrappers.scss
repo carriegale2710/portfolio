@@ -1,71 +1,73 @@
 //import partials
-
 @use "./mixins";
 
 
 
 .half1 {
-    // border: variables.$green-border;
-    // width: 50%;
-    height:auto;
-    
+    //sizing
     max-height: 100%;
-    @include mixins.flex-center;
-    padding: 2%;
-    // min-width: 50vw;
-    // float: left;
-    justify-items: center
+    height:auto;
 
+    //alignment
+    @include mixins.flex-center;
+    justify-items: center;
+    
+    //spacing
+    padding: 2%;
 }
 
 
 .half2 {
-    // border: variables.$green-border;
+    
+    //alignment
     @include mixins.flex-center;
+
+    //sizing
     width: fit-content;
     height: fit-content;
-    // padding: 20px 5px 20px 5px;
-    // gap: 10px;
     
-    // h2:hover {
-    //     content: "+ UX/UI Designer";
-    // }
+    //microinteraction idea for later:
+        //h2:hover {content: "+ UX/UI Designer";}
 }
 
 
 
 .img-wrapper {
+    //sizing
     @include mixins.max100;
-    @include mixins.flex-center;
-    
     overflow: hidden;
-    
-    
-    
-    
+    //alignment
+    @include mixins.flex-center;
 }
 
 img {
+    //sizing
     @include mixins.max100;
     height: auto;
     width: fit-content;
     object-fit:contain;
+
+    //spacing
     margin: 8px;
 }
 
 
 
 .caption-wrapper {
-    // border: colors.$green-border;
+
+    //alignment
     @include mixins.flex-center(row);
     justify-content: space-between;
     text-align: left;
+
+    //sizing
     width:100%;
 }
 
 #button-wrap{
-    margin: 10% 15% 10% 15%;
     
+    //spacing
+    margin: 10% 15% 10% 15%;
 }
 
     

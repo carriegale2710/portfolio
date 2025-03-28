@@ -1,28 +1,35 @@
-
+//Import partials
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
 
 #contact {
-   width: 100%;
-   height: 100vh;
-   @include mixins.flex-center;
-   justify-content: center;
+    //sizing
+    width: 100%;
+    height: 100vh;
+    //alignment
+    @include mixins.flex-center;
+    justify-content: center;
 }
 
 #contact-wrapper {
+    //sizing
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    //alignment
     @include mixins.flex-center(row);
-    
+    flex-wrap: wrap;
+
     a {
+        //colors
         background-color: colors.$beige;
-        margin: 5%;
-        border-radius: 5px;
+        //size
         width: 200px;
-        padding: 15px;
+        //round corners
+        border-radius: 5px;
+        //alignment
         @include mixins.flex-center;
+        //spacing
+        margin: 5%;
+        padding: 15px;
     }
 }

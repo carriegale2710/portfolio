@@ -1,35 +1,43 @@
 
-
 //import partials
 //import partials
 @use "./colors";
 
+
+
+
 a {
+    //font
     text-decoration: none;
     font-family: "Space Mono", monospace;
     font-weight: 500;
     font-style: normal;
+
+    //spacing
     padding: 2px 5px 2px 5px;
+
+    //colors
     color: colors.$black-olive;
+
+    //microinteractions
     &:hover {
         color: colors.$mint;
     }
 }
 
 
-#logo {
-    height: 20px;
-
-}
-
 .CTA-button{
+    //alignment
     text-align: center;
-    color: colors.$black-olive;
     
+    //spacing
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     
-
+    //colors
+    color: colors.$black-olive;
+    
+    //microinteractions
     &:hover {
         color: colors.$beige;
         background-color: colors.$black-olive;

@@ -17,21 +17,21 @@
 @use "./sections/techstack";
 
 
-// ///* Block component */
-// .btn {}
+//BEM SYNTAX
+    // Block component:
+    // .btn {}
 
-// /* Element that depends upon the block */ 
-// .btn__price {}
+    // Element that depends upon the block:
+    // .btn__price {}
 
-// /* Modifier that changes the style of the block */
-// .btn--orange {} 
-// .btn--big {}
-
+    // Modifier that changes the style of the block:
+    // .btn--orange {} 
+    // .btn--big {}
+//
 
 
 *{
     box-sizing: border-box;
-    
 }
 
 html, body{
@@ -41,14 +41,15 @@ html, body{
 }
 
 
-
 button{
+    //round corners
     border-radius: 20px;
 }
 
 img{
-
+    //round corners
     border-radius: 20px;
+    //sizing
     @include mixins.max100;
     height: auto;
     width: fit-content;

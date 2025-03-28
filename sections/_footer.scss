@@ -1,15 +1,14 @@
-
+//Import partials
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
 
 
-
-
 #footer {
-    // border: 1px dotted red;
+    //alignment
     @include mixins.flex-center;
     text-align: center;
+    //spacing
     padding: 2vw;
     gap: 2vw;
 }

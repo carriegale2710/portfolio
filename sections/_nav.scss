@@ -6,28 +6,35 @@
 
 nav {
     // border: 1px dotted red;
+
+    //alignment
     @include mixins.flex-center(row);
     justify-content: space-between;
     padding: 1vh;
     height: 5vh;
-    background-color: white;
+
+    //sticky nav
     position: sticky;
     top: 0;
     overflow: hidden;
-
-    
+    background-color: white;
 }
 
 
 .nav-wrapper {
         // border: 1px solid darkblue;
+
+        //alignment
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+
+        //spacing
         gap: 5px;
+
+        //sizing
         height: fit-content;
         max-width: 100%;
-        justify-content: space-between;
-        align-items: center;
     }
 
 

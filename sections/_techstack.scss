@@ -5,15 +5,19 @@
 
 
 .techstack {
+    //alignment
     @include mixins.flex-center(row);
-    max-width: 100%;
-    padding: 10% 5% ;
     flex-wrap: wrap;
+    //sizing
+    max-width: 100%;
+    //spacing
+    padding: 10% 5%;
     gap: 30px;
     margin-bottom: 50px;
     
-    &__item{
-    @include mixins.flex-center;
+    &__item {
+        //alignment
+        @include mixins.flex-center;
     }
 }
 
