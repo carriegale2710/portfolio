@@ -1,21 +1,25 @@
 /* SCSS HEX */
 h1 {
-  padding: 80px 5%;
+  padding: 50px 5%;
   text-align: center;
   color: #2f3328;
 }
 
 h2 {
-  margin: 20px;
-  text-align: center;
+  padding: 30px 5%;
   color: #2f3328;
+  width: 100%;
 }
 
 p {
-  max-width: 30%;
-  max-height: 100%;
   height: fit-content;
   width: fit-content;
+}
+
+#logo-text {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
 }
 
 .silkscreen--regular {
@@ -35,7 +39,8 @@ p {
   font-family: "VT323", monospace;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
+  font-size: 200%;
+  margin: 2%;
 }
 
 .dotgothic16--regular {
@@ -130,15 +135,35 @@ a:hover {
   color: #70bd9a;
 }
 
-.CTA-button {
+#home-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#skip-button {
   text-align: center;
   border-radius: 5px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   color: #2f3328;
 }
-.CTA-button:hover {
+#skip-button:hover {
   color: #d5d9b4;
   background-color: #2f3328;
+}
+
+img {
+  border-radius: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: fit-content;
+  object-fit: contain;
+}
+
+#personal-logo {
+  max-height: 30px;
 }
 
 nav {
@@ -175,42 +200,46 @@ header {
   margin: 0px;
 }
 
-#about {
+.about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #d5d9b4;
   height: fit-content;
+  padding: 50px 0px;
   width: 100%;
 }
-
-.whole-wrap {
+.about__aside {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
 }
-.whole-wrap img {
+.about__aside img {
   max-width: 200px;
-  padding: 5px;
+  margin: 50px;
 }
-
-.text-wrapper {
+.about__img-wrapper {
   max-height: 100%;
   max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about__text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: fit-content;
-}
-.text-wrapper p {
   padding-bottom: 30px;
-  min-width: 350px;
+  width: fit-content;
+  min-width: 300px;
+  max-width: 30%;
 }
 
 #projects {
@@ -276,14 +305,25 @@ header {
 
 .techstack {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: 50px 20px;
+}
+.techstack h2 {
+  text-align: center;
+}
+.techstack__list {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   max-width: 100%;
-  padding: 10% 5%;
   gap: 30px;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 .techstack__item {
   display: flex;
@@ -304,20 +344,6 @@ html, body {
 
 button {
   border-radius: 20px;
-}
-
-img {
-  border-radius: 20px;
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: fit-content;
-  object-fit: contain;
-  margin: 8px;
-}
-
-#logo {
-  max-height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

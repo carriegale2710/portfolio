@@ -5,7 +5,7 @@
 
 //applied to all main headings 
 h1 {
-    padding: 80px 5% ;
+    padding: 50px 5% ;
     text-align: center;
     color: colors.$black-olive;
 }
@@ -13,20 +13,24 @@ h1 {
 
 //applies to all subheadings
 h2 {
-    margin: 20px;
-    text-align: center;
+    padding: 30px 5% ;
     color: colors.$black-olive;
+    width: 100%;
 }
 
 //applies to all paragraphs
 p{
-    max-width: 30%;
-    max-height: 100%;
+    
     height: fit-content;
     width:fit-content;
 }
 
-
+#logo-text{
+    //sizing
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
 
 
 ///////// MAIN HEADING FONTS ///////////////////////////////////////////////////////
@@ -59,7 +63,8 @@ p{
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
-    margin: 0;
+    font-size: 200%;
+    margin: 2%;
 }
 
 

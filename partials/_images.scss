@@ -1,0 +1,17 @@
+//import partials
+@use "./mixins";
+
+img{
+    //round corners
+    border-radius: 20px;
+    //sizing
+    @include mixins.max100;
+    height: auto;
+    width: fit-content;
+    object-fit:contain;
+}
+
+#personal-logo {
+    //sizing
+    max-height: 30px;
+}

@@ -1,7 +1,7 @@
 
 //import partials
-//import partials
 @use "./colors";
+@use "./mixins";
 
 
 
@@ -19,13 +19,18 @@ a {
     }
 }
 
+#home-button {
+    @include mixins.flex-center(row);
+    
 
-.CTA-button{
+}
+
+#skip-button{
     //alignment
     text-align: center;
     //spacing
     border-radius: 5px;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     //colors
     color: colors.$black-olive;
     //microinteractions
