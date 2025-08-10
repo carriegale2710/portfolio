@@ -40,71 +40,31 @@
     </nav>
 
     <header id="header">
-      <div class="half2 fullHeight">
-        <h1 class="silkscreen--regular">Hey, I'm Carrie!</h1>
-        <h2 class="vt323--regular">A Junior Software Engineer_</h2>
-        <!-- <h3>& Freelance UX Designer</h2> -->
-        <a href="#projects" id="button-wrap">
-          <button type="button" id="skip-button" class="roboto-mono--normal">
-            See my projects :3
-          </button>
-        </a>
-      </div>
+      <h1 class="silkscreen--regular">Carrie Gale</h1>
+      <h2 class="vt323--regular">
+        A Junior Software Engineer_
+        <br />
+        Based in Sydney, Australia
+      </h2>
+      <a href="#projects" id="button-wrap">
+        <button type="button" id="skip-button" class="roboto-mono--normal">
+          See my projects :3
+        </button>
+      </a>
     </header>
 
     <section id="about" class="about">
       <h1 class="silkscreen--regular">- ABOUT ME -</h1>
+
       <div class="about__aside">
-        <div class="about__img-wrapper">
-          <img src="./assets/final/images/carrie.png" alt="picture of carrie" />
-        </div>
-        <div class="about__text-wrapper">
-          <!-- add spme emojis and bolding to spruce this up -->
-          <br />
-          <h2 class="vt323--regular">Hey there!</h2>
-          <br />
-          <p class="roboto-mono--normal">
-            I'm just another curious cat diving into the world of programming!
-            <br /><br />
-            Always looking for the next big research hyperfixation, the next
-            project, and the next opportunity to learn from failure.
-          </p>
-        </div>
-      </div>
-      <div class="about__aside">
-        <h2 class="vt323--regular">
-          Some life mottos I'm trying to live by...
-        </h2>
         <div class="about__img-wrapper">
           <img
             src="./assets/final/images/ema-skye-emawriteskye.gif"
-            alt="animated character typing on laptop"
-          />
-        </div>
-        <br />
-        <div class="about__text-wrapper">
-          <br />
-          <p class="roboto-mono--normal">
-            Be a scientist! Treat life a one big 'experiment'. Sometimes, it's
-            just not that deep bro. Failure is just part of the learning
-            process!
-            <br /><br />
-            WINNERS ARE SUPERLOSERS. Don't expect to win on your first try. But
-            don't expect to lose on every try! Every success had 99 failures
-            before it.
-          </p>
-        </div>
-      </div>
-      <div class="about__aside">
-        <div class="about__img-wrapper">
-          <img
-            src="./assets/final/images/fallbacks/smile-hand-drawn-emoticon-svgrepo-com.svg"
-            alt="pixel art robot mascot"
+            alt="animated character "
           />
         </div>
         <div class="about__text-wrapper">
           <h2 class="vt323--regular">What I do...</h2>
-          <br />
           <p class="roboto-mono--normal">
             I love to build things! I have a passion for creating user-friendly
             interfaces and efficient back-end systems. My goal is to make
@@ -245,14 +205,20 @@
         <!-- Trivia Game (In Progress) -->
         <li class="projects__card" data-status="in-progress">
           <article class="project" aria-labelledby="proj-trivia-title">
-            <figure class="project__media">
-              <img
-                src="https://plays.org/screenshots/quiz-game-vs.png"
-                alt="Trivia game interface placeholder"
-                loading="lazy"
-              />
-              <figcaption>Real-time quiz application</figcaption>
-            </figure>
+            <a
+              href="#"
+              class="project__media-link"
+              aria-label="Trivia Game repository coming soon"
+            >
+              <figure class="project__media">
+                <img
+                  src="https://plays.org/screenshots/quiz-game-vs.png"
+                  alt="Trivia game interface placeholder"
+                  loading="lazy"
+                />
+                <figcaption>Real-time quiz application</figcaption>
+              </figure>
+            </a>
             <div class="project__body">
               <h2
                 id="proj-trivia-title"
@@ -275,13 +241,21 @@
         <!-- Employee Creator FullStack App -->
         <li class="projects__card">
           <article class="project" aria-labelledby="proj-employee-title">
-            <figure class="project__media">
-              <img
-                src="assets/final/images/projects/employee-creator.png"
-                alt="Employee creator app form placeholder"
-                loading="lazy"
-              />
-            </figure>
+            <a
+              href="https://github.com/carriegale2710/employee-creator"
+              target="_blank"
+              rel="noopener"
+              class="project__media-link"
+              aria-label="Open Employee Creator FullStack App code on GitHub"
+            >
+              <figure class="project__media">
+                <img
+                  src="assets/final/images/projects/employee-creator.png"
+                  alt="Employee creator app form placeholder"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
             <div class="project__body">
               <h2 id="proj-employee-title" class="project__title">
                 Employee Creator FullStack App
@@ -316,13 +290,21 @@
         <!-- Todo Fullstack App -->
         <li class="projects__card">
           <article class="project" aria-labelledby="proj-todo-title">
-            <figure class="project__media">
-              <img
-                src="assets/final/images/projects/todos-app.png"
-                alt="Todo app task list placeholder"
-                loading="lazy"
-              />
-            </figure>
+            <a
+              href="https://github.com/carriegale2710/todos-app"
+              target="_blank"
+              rel="noopener"
+              class="project__media-link"
+              aria-label="Open Todo App code on GitHub"
+            >
+              <figure class="project__media">
+                <img
+                  src="assets/final/images/projects/todos-app.png"
+                  alt="Todo app task list placeholder"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
             <div class="project__body">
               <h2
                 id="proj-todo-title"
@@ -350,13 +332,21 @@
         <!-- E-commerce Platform -->
         <li class="projects__card">
           <article class="project" aria-labelledby="proj-ecommerce-title">
-            <figure class="project__media">
-              <img
-                src="assets/final/images/projects/e-commerce.png"
-                alt="E-commerce product grid placeholder"
-                loading="lazy"
-              />
-            </figure>
+            <a
+              href="https://github.com/carriegale2710/e-commerce"
+              target="_blank"
+              rel="noopener"
+              class="project__media-link"
+              aria-label="Open E-commerce Platform code on GitHub"
+            >
+              <figure class="project__media">
+                <img
+                  src="assets/final/images/projects/e-commerce.png"
+                  alt="E-commerce product grid placeholder"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
             <div class="project__body">
               <h2
                 id="proj-ecommerce-title"
@@ -385,13 +375,21 @@
         <!-- Minesweeper CLI -->
         <li class="projects__card">
           <article class="project" aria-labelledby="proj-minesweeper-title">
-            <figure class="project__media">
-              <img
-                src="https://minesweeper-pro.com/media/minesweeper.png"
-                alt="Minesweeper console game placeholder"
-                loading="lazy"
-              />
-            </figure>
+            <a
+              href="https://github.com/carriegale2710/minesweeper"
+              target="_blank"
+              rel="noopener"
+              class="project__media-link"
+              aria-label="Open Minesweeper game code on GitHub"
+            >
+              <figure class="project__media">
+                <img
+                  src="https://minesweeper-pro.com/media/minesweeper.png"
+                  alt="Minesweeper console game placeholder"
+                  loading="lazy"
+                />
+              </figure>
+            </a>
             <div class="project__body">
               <h2
                 id="proj-minesweeper-title"

@@ -3,46 +3,40 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-
-
 .about {
+  @include mixins.flex-center;
+  background-color: colors.$beige;
+  height: fit-content;
+  padding: 50px 0px;
+  width: 100%;
+
+  &__aside {
+    @include mixins.flex-center(row);
+    flex-wrap: wrap;
+
+    img {
+      max-width: 300px;
+      margin: 50px;
+    }
+  }
+
+  &__img-wrapper {
+    //sizing
+    @include mixins.max100;
+    overflow: hidden;
+    //alignment
     @include mixins.flex-center;
-    background-color: colors.$beige;
-    height: fit-content;
-    padding: 50px 0px;
-    width: 100%;
+  }
 
-    &__aside{
-        @include mixins.flex-center(row);
-        flex-wrap: wrap;
-        
-        img {
-            max-width: 200px;
-            margin: 50px;
-        }
-    }
-
-    &__img-wrapper {
-        //sizing
-        @include mixins.max100;
-        overflow: hidden;
-        //alignment
-        @include mixins.flex-center;
-    }
-
-    &__text-wrapper {
-        //alignment
-        @include mixins.flex-center();
-        flex-wrap:wrap;
-        //spacing
-        padding-bottom: 30px;
-        //sizing
-        width:fit-content;
-        min-width: 300px;
-        max-width: 30%;
-    }
-    
+  &__text-wrapper {
+    //alignment
+    @include mixins.flex-center();
+    flex-wrap: wrap;
+    //spacing
+    padding-bottom: 30px;
+    //sizing
+    width: fit-content;
+    min-width: 300px;
+    max-width: 30%;
+  }
 }
-
-
-

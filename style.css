@@ -22,16 +22,6 @@ p {
   padding: 0;
 }
 
-#projects {
-  color: aliceblue;
-}
-#projects a {
-  color: inherit;
-}
-#projects h2 {
-  color: inherit;
-}
-
 .silkscreen--regular {
   font-family: "Silkscreen", sans-serif;
   font-style: normal;
@@ -204,13 +194,19 @@ nav {
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: col;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   height: 98vh;
   width: 100vw;
   margin: 0px;
+  padding: 2em;
+}
+header h1 {
+  margin-bottom: 0.5em;
+  font-size: 3rem;
 }
 
 .about {
@@ -231,7 +227,7 @@ header {
   flex-wrap: wrap;
 }
 .about__aside img {
-  max-width: 200px;
+  max-width: 300px;
   margin: 50px;
 }
 .about__img-wrapper {
@@ -272,7 +268,18 @@ header {
   padding: 20px;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+#projects p {
+  color: #d5d9b4;
+}
+#projects a {
+  color: white;
+  text-decoration: none;
+}
+#projects a:hover {
+  text-decoration: underline;
+  color: #70bd9a;
 }
 
 .project-card {
@@ -298,10 +305,6 @@ header {
   overflow: hidden;
   transition: background-color 0.3s;
   padding: 10px;
-}
-.projects__card a {
-  text-decoration: none;
-  color: #d5d9b4;
 }
 .projects__card:hover {
   background-color: rgba(124.75, 124.75, 124.75, 0.271);
@@ -373,7 +376,7 @@ footer img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   height: fit-content;
   padding: 50px 20px;
 }
@@ -381,13 +384,12 @@ footer img {
   text-align: center;
 }
 .techstack__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
   flex-wrap: wrap;
   max-width: 100%;
-  gap: 30px;
+  height: fit-content;
   margin: 50px 0px;
 }
 .techstack__item {
@@ -395,10 +397,11 @@ footer img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 30px;
+  padding: 10px;
 }
 .techstack__item img {
   max-height: 30px;
+  border-radius: 0;
 }
 
 * {
@@ -410,10 +413,16 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 button {
   border-radius: 20px;
+}
+
+section {
+  height: fit-content;
+  min-width: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

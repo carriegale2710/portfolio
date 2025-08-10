@@ -17,7 +17,19 @@
     padding: 20px;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  p {
+    color: colors.$beige;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      color: colors.$mint;
+    }
   }
 }
 
@@ -40,10 +52,6 @@
   transition: background-color 0.3s;
   padding: 10px;
 
-  a {
-    text-decoration: none;
-    color: colors.$beige;
-  }
   &:hover {
     background-color: lighten(rgba(112, 112, 112, 0.271), 5%);
   }
