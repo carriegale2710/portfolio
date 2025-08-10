@@ -1,12 +1,32 @@
-
-@mixin flex-center($direction:column) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+@mixin flex-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin max100 {
-    max-height: 100%;
-    max-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+@mixin grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, minmax(80px, 1fr));
+}
+
+@mixin grid-item {
+  @include flex-center;
+  padding: 10px;
+}
+@mixin hide-scrollbar {
+  // Hide scrollbar for Chrome, Safari and Opera
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // Hide scrollbar for IE, Edge and Firefox
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

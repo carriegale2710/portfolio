@@ -1,50 +1,15 @@
-//import partials
 @use "./mixins";
 
-
-
-.half1 {
-    //sizing
-    max-height: 100%;
-    height:auto;
-    //alignment
-    @include mixins.flex-center;
-    justify-items: center;
-    //spacing
-    padding: 2%;
-}
-
-
-.half2 {
-    //alignment
-    @include mixins.flex-center;
-    //sizing
-    width: fit-content;
-    height: fit-content;
-    //microinteraction idea for later:
-        //h2:hover {content: "+ UX/UI Designer";}
-}
-
-.caption-wrapper {
-    //alignment
-    @include mixins.flex-center(row);
-    justify-content: space-between;
-    text-align: left;
-    //sizing
-    width:100%;
-}
-
+// Generic image wrapper utility used across site (about section extends this)
 .img-wrapper {
-    //sizing
-    @include mixins.max100;
-    overflow: hidden;
-    //alignment
-    @include mixins.flex-center;
+  @include mixins.max100;
+  overflow: hidden;
+  @include mixins.flex-center;
 }
 
-
-
-#button-wrap{
-    //spacing
-    margin: 10% 15% 10% 15%;
+// Skip/CTA button container
+#button-wrap {
+  margin: 10% 15% 10% 15%;
 }
+
+// Removed: .half1, .half2, .caption-wrapper (unused in current markup)

@@ -3,17 +3,17 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-
 header {
-    // border: red 1px solid;
-    @include mixins.flex-center(row);
-    flex-wrap: wrap;
-    height: 98vh;
-    width: 100vw;
-    margin: 0px;
+  // border: red 1px solid;
+  @include mixins.flex-center(col);
+  text-align: center;
+  flex-wrap: wrap;
+  height: 98vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 2em;
+  h1 {
+    margin-bottom: 0.5em;
+    font-size: 3rem;
+  }
 }
-
- 
-    
-
-

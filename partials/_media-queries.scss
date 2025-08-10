@@ -1,15 +1,47 @@
-
 // MEDIA QUERIES
 
 //https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
-
 // SYNTAX: @media (condition) {CSS rules go here}
 
+// Breakpoint variables for consistency
+$phone: 599px; // Mobile devices
+$tablet: 600px; // Tablets and small laptops
+$laptop: 900px; // Laptops and desktops
 
+// PHONE (up to 599px)
+// Default styles are mobile-first, so no media query needed for phone
 
-// @media only screen and (max-width: 600px) {}
-  
-// @media only screen and (min-width: 600px) {}
+// TABLET (600px and up)
+@mixin tablet-up {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
 
-// @media only screen and (min-width: 768px) {}
+// LAPTOP (900px and up)
+@mixin laptop-up {
+  @media only screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+// Additional utility queries
+@mixin phone-only {
+  @media only screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media only screen and (min-width: $tablet) and (max-width: 899px) {
+    @content;
+  }
+}
+
+// Extra small phones
+@mixin extra-small {
+  @media only screen and (max-width: 359px) {
+    @content;
+  }
+}

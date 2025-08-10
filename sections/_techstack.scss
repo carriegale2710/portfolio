@@ -3,52 +3,34 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-
 .techstack {
+  @include mixins.flex-center;
+  max-width: 100%;
+  height: fit-content;
+  padding: 50px 20px;
 
-    @include mixins.flex-center;
-    width: 100%;
+  h2 {
+    text-align: center;
+  }
+
+  &__list {
+    //alignment
+    @include mixins.grid-container;
+    flex-wrap: wrap;
+    //sizing
+    max-width: 100%;
     height: fit-content;
-    padding: 50px 20px;
-    
-    
+    //spacing
+    margin: 50px 0px;
+  }
 
-    h2{
-        text-align: center;
-    }
+  &__item {
+    //alignment
+    @include mixins.grid-item;
 
-    &__list{
-        //alignment
-        @include mixins.flex-center(row);
-        flex-wrap: wrap;
-        //sizing
-        max-width: 100%;
-        //spacing
-        gap: 30px;
-        margin: 50px 0px;
+    img {
+      max-height: 30px;
+      border-radius: 0;
     }
-
-    &__item {
-        //alignment
-        @include mixins.flex-center;
-    }
+  }
 }
-
-
-// #stacks {
-//     @include mixins.flex-center(row);
-//     max-width: 100%;
-//     padding: 5% 5% 15% 5%;
-//     flex-wrap: wrap;
-//     justify-content: space-evenly;
-// }
-
-// .stack-card {
-//     @include mixins.flex-center;
-//     max-width: 100%;
-//     width: fit-content;
-//     height: fit-content;
-//     padding: 10px;
-//     flex-wrap: wrap;
-    
-// }
