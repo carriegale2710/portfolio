@@ -2,6 +2,7 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
+@use "../partials/media-queries" as mq;
 
 .about {
   @include mixins.flex-center;
@@ -9,6 +10,14 @@
   height: fit-content;
   padding: 50px 0px;
   width: 100%;
+
+  @include mq.tablet-up {
+    padding: 40px;
+  }
+
+  @include mq.laptop-up {
+    padding: 60px;
+  }
 
   &__aside {
     @include mixins.flex-center(row);

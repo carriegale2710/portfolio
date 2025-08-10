@@ -1,6 +1,7 @@
 @use "../partials/colors";
 @use "../partials/fonts";
 @use "../partials/mixins";
+@use "../partials/media-queries" as mq;
 
 nav {
   // border: 1px dotted red;
@@ -16,6 +17,10 @@ nav {
   top: 0;
   overflow: hidden;
   background-color: white;
-}
 
-// Removed .nav-wrapper (unused in markup)
+  display: none;
+  //hide
+  @include mq.laptop-up {
+    display: flex;
+  }
+}

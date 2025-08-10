@@ -151,6 +151,12 @@ nav {
   top: 0;
   overflow: hidden;
   background-color: white;
+  display: none;
+}
+@media only screen and (min-width: 900px) {
+  nav {
+    display: flex;
+  }
 }
 
 header {
@@ -179,6 +185,16 @@ header h1 {
   height: fit-content;
   padding: 50px 0px;
   width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  .about {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .about {
+    padding: 60px;
+  }
 }
 .about__aside {
   display: flex;
@@ -254,7 +270,7 @@ header h1 {
   border-radius: 10px;
   overflow: hidden;
   transition: background-color 0.3s;
-  padding: 10px;
+  padding: 3em;
 }
 .projects__card:hover {
   background-color: rgba(124.75, 124.75, 124.75, 0.271);
