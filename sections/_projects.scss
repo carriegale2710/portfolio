@@ -33,13 +33,6 @@
   }
 }
 
-.project-card {
-  // border: 2px solid red;
-  padding: 30px 0px;
-  gap: 10px;
-  @include mixins.flex-center;
-}
-
 .project__title {
   color: colors.$beige;
   @include fonts.dotgothic16-regular;

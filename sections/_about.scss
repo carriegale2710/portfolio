@@ -21,11 +21,12 @@
   }
 
   &__img-wrapper {
-    //sizing
-    @include mixins.max100;
+    // image wrapper styles (copied from .img-wrapper utility)
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    //alignment
-    @include mixins.flex-center;
+    border-radius: 8px;
   }
 
   &__text-wrapper {
