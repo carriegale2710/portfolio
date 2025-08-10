@@ -1,0 +1,55 @@
+# HIDE Only:
+# 🔒 Color exploration files (keep final palette in CSS variables)
+# 🔒 External inspiration (copyright/attribution concerns)
+# 🔒 Rejected/backup versions (avoid clutter)
+
+# Project Development Files
+project-brief.md
+design-process/
+copy.md
+base-CV.md
+
+
+# Design Development Assets (keep final assets, hide process)
+
+*wireframe*
+*moodboard*
+*sketch*
+
+# Development Environment Files
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+
+# SCSS Compilation (optional - some prefer to keep these)
+# *.css.map
+
+# Personal Notes and Documentation
+notes/
+todo.md
+personal-notes.md
+dev-notes.md
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Environment Variables (if added later)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Dependencies (if npm/node is added later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs (if build process is added)
+dist/
+build/
