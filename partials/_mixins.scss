@@ -1,12 +1,11 @@
-
-@mixin flex-center($direction:column) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+@mixin flex-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin max100 {
-    max-height: 100%;
-    max-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }

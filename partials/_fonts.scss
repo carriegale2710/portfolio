@@ -75,6 +75,23 @@ p {
   margin: 0;
 }
 
+@mixin vt323-regular($font-size: 200%, $margin: 2%) {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size;
+  margin: $margin;
+}
+
+@mixin dotgothic16-regular($margin: 0) {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: $margin;
+}
+
+//Font 2: DotGothic16
+
 ///////// BODY FONTS ///////////////////////////////////////////////////////
 
 //Font 1: Roboto Mono
