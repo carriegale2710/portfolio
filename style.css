@@ -22,6 +22,16 @@ p {
   padding: 0;
 }
 
+#projects {
+  color: aliceblue;
+}
+#projects a {
+  color: inherit;
+}
+#projects h2 {
+  color: inherit;
+}
+
 .silkscreen--regular {
   font-family: "Silkscreen", sans-serif;
   font-style: normal;
@@ -157,12 +167,15 @@ img {
   border-radius: 20px;
   max-height: 100%;
   max-width: 100%;
-  height: auto;
   width: fit-content;
   object-fit: contain;
 }
 
 #personal-logo {
+  max-height: 30px;
+}
+
+.techstack__item img {
   max-height: 30px;
 }
 
@@ -336,7 +349,8 @@ header {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -344,6 +358,34 @@ html, body {
 
 button {
   border-radius: 20px;
+}
+
+.techstack__item {
+  max-height: 30px;
+}
+.techstack__item img {
+  max-height: 30px;
+}
+
+.projects__card {
+  border: 1px solid rgb(20.6593406593, 22.4175824176, 17.5824175824);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+  padding: 10px;
+}
+.projects__card:hover {
+  background-color: rgb(60.1703296703, 65.2912087912, 51.2087912088);
+}
+.projects__card img {
+  width: 100%;
+  height: auto;
+}
+.projects__card figcaption {
+  display: none;
+}
+.projects__card p {
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

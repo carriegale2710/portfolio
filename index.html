@@ -1,209 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrie Gale</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2f1970a1ee.js" crossorigin="anonymous"></script>
-</head>
-     
-<body>
-        <!-- Remember BEM : [block]__[element]--[modifier] -->
-         
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DotGothic16&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2f1970a1ee.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Remember BEM : [block]__[element]--[modifier] -->
+
     <nav id="nav">
-        <a id="home-button" href="./index.html">
-            <div  class="img-wrapper">
-                <img id="personal-logo" src="./assets/mascot.png" alt="personal logo"> 
-            </div>
-            <!-- idea: create flashing animation for type cursor below -->
-            <p id="logo-text" class="silkscreen--regular">Carrie Gale_</p> 
-        </a>
-        <div class="space-mono--regular" class="nav-wrapper">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+      <a id="home-button" href="./index.html">
+        <div class="img-wrapper">
+          <img
+            id="personal-logo"
+            src="./assets/final/images/mascot.png"
+            alt="personal logo"
+          />
         </div>
+        <!-- idea: create flashing animation for type cursor below -->
+        <p id="logo-text" class="silkscreen--regular">Carrie Gale_</p>
+      </a>
+      <div class="space-mono--regular" class="nav-wrapper">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
 
     <header id="header">
-        <div class="img-wrapper" >
-            <img src="./assets/mascot.png" alt="pixelated scaredy cat">
-        </div>   
-        <div class="half2 fullHeight">
-            <h1 class="silkscreen--regular">Hey, I'm Carrie!</h1>
-            <h2 class="vt323--regular" >A Junior Software Engineer_</h2>
-            <!-- <h3>& Freelance UX Designer</h2> -->
-            <a href="#projects" id="button-wrap">
-                <button type="button" id="skip-button" class="roboto-mono--normal">See my projects :3</button>
-            </a>
-        </div>
+      <div class="img-wrapper">
+        <img
+          src="./assets/final/images/mascot.png"
+          alt="pixel art cat mascot"
+        />
+      </div>
+      <div class="half2 fullHeight">
+        <h1 class="silkscreen--regular">Hey, I'm Carrie!</h1>
+        <h2 class="vt323--regular">A Junior Software Engineer_</h2>
+        <!-- <h3>& Freelance UX Designer</h2> -->
+        <a href="#projects" id="button-wrap">
+          <button type="button" id="skip-button" class="roboto-mono--normal">
+            See my projects :3
+          </button>
+        </a>
+      </div>
     </header>
 
-
     <section id="about" class="about">
-
-        <h1 class="silkscreen--regular"> - ABOUT ME - </h1>
-
-        <div class="about__aside">
-            <div class="about__img-wrapper">
-                <img src="https://placecats.com/500/500" alt="picture of carrie">
-            </div>
-            <div class="about__text-wrapper">
-                <!-- add spme emojis and bolding to spruce this up -->
-                <br>
-                <h2 class="vt323--regular">Hey there!</h2>
-                <br>
-                <p class="roboto-mono--normal">
-                    I'm just another curious cat diving into the world of programming! 
-                   <br><br>
-                   Always looking for the next big research hyperfixation, the next project, and the next opportunity to learn from failure.
-                </p>
-            </div>
-            <div class="about__text-wrapper">
-                <h2 class="vt323--regular">Some life mottos I'm trying to live by...</h2>
-                <br>
-                <p class="roboto-mono--normal">
-                    Be a scientist! Treat life a one big 'experiment'. Sometimes, it's just not that deep bro. Failure is just part of the learning process!
-                    <br><br>
-                    WINNERS ARE SUPERLOSERS. Don't expect to win on your first try. But don't expect to lose on every try! Every success had 99 failures before it. 
-                    <br><br>
-                    Venture. Fail. Learn. Grow... and most importantly.. JUST START! A good sailor never sailed smooth seas before!
-                </p>
-            </div>
+      <h1 class="silkscreen--regular">- ABOUT ME -</h1>
+      <div class="about__aside">
+        <div class="about__img-wrapper">
+          <img src="./assets/final/images/carrie.png" alt="picture of carrie" />
         </div>
+        <div class="about__text-wrapper">
+          <!-- add spme emojis and bolding to spruce this up -->
+          <br />
+          <h2 class="vt323--regular">Hey there!</h2>
+          <br />
+          <p class="roboto-mono--normal">
+            I'm just another curious cat diving into the world of programming!
+            <br /><br />
+            Always looking for the next big research hyperfixation, the next
+            project, and the next opportunity to learn from failure.
+          </p>
+        </div>
+        <div class="about__text-wrapper">
+          <div class="img-wrapper">
+            <img
+              src="./assets/final/images/ema-skye-emawriteskye.gif"
+              alt="animated character typing on laptop"
+            />
+          </div>
+          <h2 class="vt323--regular">
+            Some life mottos I'm trying to live by...
+          </h2>
+          <br />
+          <p class="roboto-mono--normal">
+            Be a scientist! Treat life a one big 'experiment'. Sometimes, it's
+            just not that deep bro. Failure is just part of the learning
+            process!
+            <br /><br />
+            WINNERS ARE SUPERLOSERS. Don't expect to win on your first try. But
+            don't expect to lose on every try! Every success had 99 failures
+            before it.
+            <br /><br />
+            Venture. Fail. Learn. Grow... and most importantly.. JUST START! A
+            good sailor never sailed smooth seas before!
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="techstack">
-        <h1 class="silkscreen--regular"> - TECH STACK - </h1>
+      <h1 class="silkscreen--regular">- TECH STACK -</h1>
+
+      <section>
         <h2 class="dotgothic16--regular">Front-End tools:</h2>
+
         <div class="techstack__list roboto-mono--normal">
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="HTML logo" >
-                <p >HTML</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="CSS logo" >
-                <p>CSS</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="SASS logo" >
-                <p>SASS</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="figma logo">
-                <p>Figma</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="Adobe Illustrator logo">
-                <p>Illustrator</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="Adobe  Photoshop logo">
-                <p>Photoshop</p>
-            </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/html5-svgrepo-com.svg"
+              alt="HTML logo"
+            />
+            <p>HTML</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/css3-svgrepo-com.svg"
+              alt="CSS logo"
+            />
+            <p>CSS</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/typescript-svgrepo-com.svg"
+              alt="Typescript logo"
+            />
+            <p>Typescript</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/javascript-svgrepo-com.svg"
+              alt="Javascript logo in yellow is initals JS"
+            />
+            <p>Javascript</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/sass-svgrepo-com.svg"
+              alt="SASS logo"
+            />
+            <p>SASS</p>
+          </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/react-svgrepo-com.svg"
+              alt="React logo showing a blue nucleus"
+            />
+            <p>React</p>
+          </div>
         </div>
+      </section>
+
+      <section>
         <h2 class="dotgothic16--regular">Back-End tools:</h2>
         <div class="techstack__list roboto-mono--normal">
-            <div class="teckstack__item">
-                <img src="https://placecats.com/100/100" alt="Javascript logo in yellow is initals JS">
-                <p>Javascript</p>
-            </div> 
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="React logo showing a blue nucleus">
-                <p>React</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="logo">
-                <p>Cloud AWS</p>
-            </div>
-            <div class="techstack__item">
-                <img src="https://placecats.com/100/100" alt="python logo">
-                <p>Python</p>
-            </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/java-svgrepo-com.svg"
+              alt="Java logo"
+            />
+            <p>Java</p>
+          </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/mysql-official.svg"
+              alt="MySQL logo"
+            />
+            <p>MySQL</p>
+          </div>
+          <div class="techstack__item">
+            <img src="./assets/final/logos/springio-icon.svg" alt="Java logo" />
+            <p>Spring Boot</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/nextjs-icon.svg"
+              alt="Next JS logo"
+            />
+            <p>Next JS</p>
+          </div>
+
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/aws-svgrepo-com.svg"
+              alt="Cloud AWS logo"
+            />
+            <p>Cloud AWS</p>
+          </div>
         </div>
+      </section>
+
+      <section>
+        <h2 class="dotgothic16--regular">Design tools:</h2>
+        <div class="techstack__list roboto-mono--normal">
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/Figma_Symbol_0.svg"
+              alt="figma logo"
+            />
+            <p>Figma</p>
+          </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/Webflow_Mark_Logo_Blue.svg"
+              alt="Webflow logo"
+            />
+            <p>Webflow</p>
+          </div>
+          <div class="techstack__item">
+            <img
+              src="./assets/final/logos/Miro_Miro_Logo_0.svg"
+              alt="Miro logo"
+            />
+            <p>Miro</p>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section id="projects" class="projects">
-
-        <h1 class="silkscreen--regular"> - PROJECTS - </h1>
-
-        <div class="project-card">
-            <div class="half1">
-                <div class="img-wrapper">
-                    <img src="https://placecats.com/500/500" alt="project preview">
-                </div>
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <h1 id="projects-heading" class="silkscreen--regular">- PROJECTS -</h1>
+      <ul class="projects__list" role="list">
+        <!-- Trivia Game (In Progress) -->
+        <li class="projects__card" data-status="in-progress">
+          <article class="project" aria-labelledby="proj-trivia-title">
+            <figure class="project__media">
+              <img
+                src="https://placekeanu.com/500/300"
+                alt="Trivia game interface placeholder"
+                loading="lazy"
+              />
+              <figcaption>Real-time quiz application</figcaption>
+            </figure>
+            <div class="project__body">
+              <h2
+                id="proj-trivia-title"
+                class="project__title dotgothic16--regular"
+              >
+                Trivia Game (MVP Q4)
+              </h2>
+              <p class="project__summary roboto-mono--normal">
+                Real-time quiz app with score persistence & adaptive difficulty.
+                <span class="project__tech">React · Spring Boot</span>
+              </p>
+              <p class="project__links roboto-mono--normal">
+                <span aria-label="demo coming soon">Demo (soon)</span> &middot;
+                <span>Repo (private)</span>
+              </p>
             </div>
-            <div class="half2">
-                <div class="caption-wrapper">
-                    <h2 class="project-title dotgothic16--regular">Project Title</h2>
-                    <!-- <p class="caption roboto-mono--normal">this is a caption</p> -->
-                </div>
+          </article>
+        </li>
+        <!-- Employee Creator FullStack App -->
+        <li class="projects__card">
+          <article class="project" aria-labelledby="proj-employee-title">
+            <figure class="project__media">
+              <img
+                src="https://placekeanu.com/500/300"
+                alt="Employee creator app form placeholder"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project__body">
+              <h2
+                id="proj-employee-title"
+                class="project__title dotgothic16--regular"
+              >
+                Employee Creator App
+              </h2>
+              <p class="project__summary roboto-mono--normal">
+                Internal HR CRUD tool streamlining record creation with
+                validation & bulk actions (time saved metric pending).
+                <span class="project__tech"
+                  >React · Spring Boot · REST · MySQL</span
+                >
+              </p>
+              <p class="project__links roboto-mono--normal">
+                <a
+                  href="https://d3bcyx0s1yb5do.cloudfront.net/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Live Employee Creator App deployment"
+                  >Live</a
+                >
+                &middot;
+                <a
+                  href="https://github.com/carriegale2710/employee-creator"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Source code for Employee Creator App on GitHub"
+                  >Code</a
+                >
+              </p>
             </div>
-        </div>
-
-        <div class="project-card">
-            <div class="half1">
-                <div class="img-wrapper">
-                    <img src="https://placecats.com/500/500" alt="project preview">
-                </div>
+          </article>
+        </li>
+        <!-- Todo Fullstack App -->
+        <li class="projects__card">
+          <article class="project" aria-labelledby="proj-todo-title">
+            <figure class="project__media">
+              <img
+                src="https://placekeanu.com/500/300"
+                alt="Todo app task list placeholder"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project__body">
+              <h2
+                id="proj-todo-title"
+                class="project__title dotgothic16--regular"
+              >
+                Todo App
+              </h2>
+              <p class="project__summary roboto-mono--normal">
+                Cross-device task manager with optimistic UI & instant sync.
+                <span class="project__tech">React · Spring · REST · MySQL</span>
+              </p>
+              <p class="project__links roboto-mono--normal">
+                <span>Live (coming)</span> &middot;
+                <a
+                  href="https://github.com/carriegale2710/todos-app"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Source code for Todo App on GitHub"
+                  >Code</a
+                >
+              </p>
             </div>
-            <div class="half2">
-                <div class="caption-wrapper">
-                    <h2 class="project-title dotgothic16--regular">Project Title</h2>
-                    <!-- <p class="caption roboto-mono--normal">this is a caption</p> -->
-                </div>
+          </article>
+        </li>
+        <!-- E-commerce Platform -->
+        <li class="projects__card">
+          <article class="project" aria-labelledby="proj-ecommerce-title">
+            <figure class="project__media">
+              <img
+                src="https://placekeanu.com/500/300"
+                alt="E-commerce product grid placeholder"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project__body">
+              <h2
+                id="proj-ecommerce-title"
+                class="project__title dotgothic16--regular"
+              >
+                E-commerce Platform
+              </h2>
+              <p class="project__summary roboto-mono--normal">
+                Contributed catalogue & cart flow; reduced add-to-cart latency
+                (metric pending).
+                <span class="project__tech">Firebase (Auth/DB) · React</span>
+              </p>
+              <p class="project__links roboto-mono--normal">
+                <span>Live (internal)</span> &middot;
+                <a
+                  href="https://github.com/carriegale2710/e-commerce"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Source code for E-commerce Platform on GitHub"
+                  >Code</a
+                >
+              </p>
             </div>
-        </div>
-
-        <div class="project-card">
-            <div class="half1">
-                <div class="img-wrapper">
-                    <img src="https://placecats.com/500/500" alt="project preview">
-                </div>
+          </article>
+        </li>
+        <!-- Minesweeper CLI -->
+        <li class="projects__card">
+          <article class="project" aria-labelledby="proj-minesweeper-title">
+            <figure class="project__media">
+              <img
+                src="https://placekeanu.com/500/300"
+                alt="Minesweeper console game placeholder"
+                loading="lazy"
+              />
+            </figure>
+            <div class="project__body">
+              <h2
+                id="proj-minesweeper-title"
+                class="project__title dotgothic16--regular"
+              >
+                Minesweeper (CLI)
+              </h2>
+              <p class="project__summary roboto-mono--normal">
+                Console logic game with difficulty levels & >90% test coverage.
+                <span class="project__tech">Java</span>
+              </p>
+              <p class="project__links roboto-mono--normal">
+                <span>Live (CLI)</span> &middot;
+                <a
+                  href="https://github.com/carriegale2710/minesweeper"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Source code for Minesweeper game on GitHub"
+                  >Code</a
+                >
+              </p>
             </div>
-            <div class="half2">
-                <div class="caption-wrapper">
-                    <h2 class="project-title dotgothic16--regular">Project Title</h2>
-                    <!-- <p class="caption roboto-mono--normal">this is a caption</p> -->
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="half1">
-                <div class="img-wrapper">
-                    <img src="https://placecats.com/500/500" alt="project preview">
-                </div>
-            </div>
-            <div class="half2">
-                <div class="caption-wrapper">
-                    <h2 class="project-title dotgothic16--regular">Project Title</h2>
-                    <!-- <p class="caption roboto-mono--normal">this is a caption</p> -->
-                </div>
-            </div>
-        </div>
-
+          </article>
+        </li>
+      </ul>
     </section>
-
 
     <section id="contact">
-        <h1 class="silkscreen--regular">Contact me!</h1>
-        <div id="contact-wrapper">
-            <a class="roboto-mono--normal" href="https://www.linkedin.com/in/carrie-gale/">@ LinkedIn</a>
-            <a class="roboto-mono--normal" href="https://github.com/carriegale2710/">@ GitHub</a>
-        </div>
+      <h1 class="silkscreen--regular">Contact me!</h1>
+      <div id="contact-wrapper">
+        <a
+          class="roboto-mono--normal"
+          href="https://www.linkedin.com/in/carrie-gale/"
+          >@ LinkedIn</a
+        >
+        <a class="roboto-mono--normal" href="https://github.com/carriegale2710/"
+          >@ GitHub</a
+        >
+      </div>
     </section>
 
-
-    <footer class ="footer">
-        <p class="roboto-mono--normal">Built in HTML/CSS and SASS. 
-            <br><br> Carrie Gale, 2025.</p>
-        <img id="personal-logo" src="./assets/mascot.png" alt="personal logo"> 
+    <footer class="footer">
+      <p class="roboto-mono--normal">
+        Built in HTML/CSS and SASS. <br /><br />
+        Carrie Gale, 2025.
+      </p>
+      <!-- Single logo instance -->
+      <img
+        id="footer-logo"
+        src="./assets/final/images/mascot.png"
+        alt="personal logo"
+      />
     </footer>
-    
-</body>
+  </body>
 </html>
