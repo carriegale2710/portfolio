@@ -3,37 +3,37 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-
 .techstack {
+  @include mixins.flex-center;
+  width: 100%;
+  height: fit-content;
+  padding: 50px 20px;
 
+  h2 {
+    text-align: center;
+  }
+
+  &__list {
+    //alignment
+    @include mixins.flex-center(row);
+    flex-wrap: wrap;
+    //sizing
+    max-width: 100%;
+    //spacing
+    gap: 30px;
+    margin: 50px 0px;
+  }
+
+  &__item {
+    //alignment
     @include mixins.flex-center;
-    width: 100%;
-    height: fit-content;
-    padding: 50px 20px;
-    
-    
+    max-height: 30px;
 
-    h2{
-        text-align: center;
+    img {
+      max-height: 30px;
     }
-
-    &__list{
-        //alignment
-        @include mixins.flex-center(row);
-        flex-wrap: wrap;
-        //sizing
-        max-width: 100%;
-        //spacing
-        gap: 30px;
-        margin: 50px 0px;
-    }
-
-    &__item {
-        //alignment
-        @include mixins.flex-center;
-    }
+  }
 }
-
 
 // #stacks {
 //     @include mixins.flex-center(row);
@@ -50,5 +50,5 @@
 //     height: fit-content;
 //     padding: 10px;
 //     flex-wrap: wrap;
-    
+
 // }

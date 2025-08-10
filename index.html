@@ -40,12 +40,6 @@
     </nav>
 
     <header id="header">
-      <div class="img-wrapper">
-        <img
-          src="./assets/final/images/mascot.png"
-          alt="pixel art cat mascot"
-        />
-      </div>
       <div class="half2 fullHeight">
         <h1 class="silkscreen--regular">Hey, I'm Carrie!</h1>
         <h2 class="vt323--regular">A Junior Software Engineer_</h2>
@@ -76,16 +70,19 @@
             project, and the next opportunity to learn from failure.
           </p>
         </div>
+      </div>
+      <div class="about__aside">
+        <h2 class="vt323--regular">
+          Some life mottos I'm trying to live by...
+        </h2>
+        <div class="about__img-wrapper">
+          <img
+            src="./assets/final/images/ema-skye-emawriteskye.gif"
+            alt="animated character typing on laptop"
+          />
+        </div>
+        <br />
         <div class="about__text-wrapper">
-          <div class="img-wrapper">
-            <img
-              src="./assets/final/images/ema-skye-emawriteskye.gif"
-              alt="animated character typing on laptop"
-            />
-          </div>
-          <h2 class="vt323--regular">
-            Some life mottos I'm trying to live by...
-          </h2>
           <br />
           <p class="roboto-mono--normal">
             Be a scientist! Treat life a one big 'experiment'. Sometimes, it's
@@ -95,9 +92,23 @@
             WINNERS ARE SUPERLOSERS. Don't expect to win on your first try. But
             don't expect to lose on every try! Every success had 99 failures
             before it.
-            <br /><br />
-            Venture. Fail. Learn. Grow... and most importantly.. JUST START! A
-            good sailor never sailed smooth seas before!
+          </p>
+        </div>
+      </div>
+      <div class="about__aside">
+        <div class="about__img-wrapper">
+          <img
+            src="./assets/final/images/fallbacks/smile-hand-drawn-emoticon-svgrepo-com.svg"
+            alt="pixel art robot mascot"
+          />
+        </div>
+        <div class="about__text-wrapper">
+          <h2 class="vt323--regular">What I do...</h2>
+          <br />
+          <p class="roboto-mono--normal">
+            I love to build things! I have a passion for creating user-friendly
+            interfaces and efficient back-end systems. My goal is to make
+            technology accessible and enjoyable for everyone.
           </p>
         </div>
       </div>
@@ -229,13 +240,14 @@
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
       <h1 id="projects-heading" class="silkscreen--regular">- PROJECTS -</h1>
+
       <ul class="projects__list" role="list">
         <!-- Trivia Game (In Progress) -->
         <li class="projects__card" data-status="in-progress">
           <article class="project" aria-labelledby="proj-trivia-title">
             <figure class="project__media">
               <img
-                src="https://placekeanu.com/500/300"
+                src="https://plays.org/screenshots/quiz-game-vs.png"
                 alt="Trivia game interface placeholder"
                 loading="lazy"
               />
@@ -259,12 +271,13 @@
             </div>
           </article>
         </li>
+
         <!-- Employee Creator FullStack App -->
         <li class="projects__card">
           <article class="project" aria-labelledby="proj-employee-title">
             <figure class="project__media">
               <img
-                src="https://placekeanu.com/500/300"
+                src="assets/final/images/projects/employee-creator.png"
                 alt="Employee creator app form placeholder"
                 loading="lazy"
               />
@@ -308,7 +321,7 @@
           <article class="project" aria-labelledby="proj-todo-title">
             <figure class="project__media">
               <img
-                src="https://placekeanu.com/500/300"
+                src="assets/final/images/projects/todos-app.png"
                 alt="Todo app task list placeholder"
                 loading="lazy"
               />
@@ -342,7 +355,7 @@
           <article class="project" aria-labelledby="proj-ecommerce-title">
             <figure class="project__media">
               <img
-                src="https://placekeanu.com/500/300"
+                src="assets/final/images/projects/e-commerce.png"
                 alt="E-commerce product grid placeholder"
                 loading="lazy"
               />
@@ -377,7 +390,7 @@
           <article class="project" aria-labelledby="proj-minesweeper-title">
             <figure class="project__media">
               <img
-                src="https://placekeanu.com/500/300"
+                src="https://minesweeper-pro.com/media/minesweeper.png"
                 alt="Minesweeper console game placeholder"
                 loading="lazy"
               />
@@ -387,10 +400,11 @@
                 id="proj-minesweeper-title"
                 class="project__title dotgothic16--regular"
               >
-                Minesweeper (CLI)
+                Minesweeper Game
               </h2>
               <p class="project__summary roboto-mono--normal">
-                Console logic game with difficulty levels & >90% test coverage.
+                Console logic game with difficulty levels
+                <!-- & >90% test coverage. -->
                 <span class="project__tech">Java</span>
               </p>
               <p class="project__links roboto-mono--normal">

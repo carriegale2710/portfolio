@@ -43,37 +43,3 @@ button {
   //round corners
   border-radius: 20px;
 }
-
-.techstack__item {
-  //sizing
-  max-height: 30px;
-
-  img {
-    max-height: 30px;
-  }
-}
-
-.projects__card {
-  border: 1px solid darken(colors.$black-olive, 10%);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: background-color 0.3s;
-  padding: 10px;
-
-  &:hover {
-    background-color: lighten(colors.$black-olive, 5%);
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  figcaption {
-    display: none;
-  }
-
-  p {
-    padding: 30px;
-  }
-}

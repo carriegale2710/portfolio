@@ -3,21 +3,47 @@
 @use "../partials/fonts";
 @use "../partials/mixins";
 
-
-
 #projects {
-    height: fit-content;
-    background-color: colors.$black;
-    h1 {color: colors.$beige;}
+  height: fit-content;
+  background-color: colors.$black;
+  h1 {
+    color: colors.$beige;
+  }
 }
 
 .project-card {
-    // border: 2px solid red;
-    padding: 30px;
-    gap: 10px;
-    @include mixins.flex-center;
+  // border: 2px solid red;
+  padding: 30px;
+  gap: 10px;
+  @include mixins.flex-center;
 }
 
 .project-title {
-    color: colors.$beige;
+  color: colors.$beige;
+}
+
+.projects__card {
+  border: 1px solid darken(colors.$black-olive, 10%);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+  padding: 10px;
+
+  &:hover {
+    background-color: lighten(colors.$black-olive, 5%);
+  }
+
+  img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  p {
+    padding: 30px;
+  }
 }
