@@ -22,39 +22,30 @@
 
     <nav id="nav">
       <a id="home-button" href="./index.html">
-        <div class="img-wrapper">
-          <img
-            id="personal-logo"
-            src="./assets/final/images/mascot.png"
-            alt="personal logo"
-          />
-        </div>
         <!-- idea: create flashing animation for type cursor below -->
         <p id="logo-text" class="silkscreen--regular">Carrie Gale_</p>
       </a>
-      <div class="space-mono--regular" class="nav-wrapper">
+      <span>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </span>
     </nav>
 
     <header id="header">
-      <h1 class="silkscreen--regular">Carrie Gale</h1>
-      <h2 class="vt323--regular">
+      <h1>Carrie Gale</h1>
+      <h2>
         A Junior Software Engineer_
         <br />
         Based in Sydney, Australia
       </h2>
       <a href="#projects" id="button-wrap">
-        <button type="button" id="skip-button" class="roboto-mono--normal">
-          See my projects :3
-        </button>
+        <button type="button" id="skip-button">See my projects :3</button>
       </a>
     </header>
 
     <section id="about" class="about">
-      <h1 class="silkscreen--regular">- ABOUT ME -</h1>
+      <h1>- ABOUT ME -</h1>
 
       <div class="about__aside">
         <div class="about__img-wrapper">
@@ -64,8 +55,8 @@
           />
         </div>
         <div class="about__text-wrapper">
-          <h2 class="vt323--regular">What I do...</h2>
-          <p class="roboto-mono--normal">
+          <h2>What I do...</h2>
+          <p>
             I love to build things! I have a passion for creating user-friendly
             interfaces and efficient back-end systems. My goal is to make
             technology accessible and enjoyable for everyone.
@@ -75,12 +66,12 @@
     </section>
 
     <section class="techstack">
-      <h1 class="silkscreen--regular">- TECH STACK -</h1>
+      <h1>- TECH STACK -</h1>
 
       <section>
         <h2 class="dotgothic16--regular">Front-End tools:</h2>
 
-        <div class="techstack__list roboto-mono--normal">
+        <div class="techstack__list">
           <div class="techstack__item">
             <img
               src="./assets/final/logos/html5-svgrepo-com.svg"
@@ -132,7 +123,7 @@
 
       <section>
         <h2 class="dotgothic16--regular">Back-End tools:</h2>
-        <div class="techstack__list roboto-mono--normal">
+        <div class="techstack__list">
           <div class="techstack__item">
             <img
               src="./assets/final/logos/java-svgrepo-com.svg"
@@ -172,7 +163,7 @@
 
       <section>
         <h2 class="dotgothic16--regular">Design tools:</h2>
-        <div class="techstack__list roboto-mono--normal">
+        <div class="techstack__list">
           <div class="techstack__item">
             <img
               src="./assets/final/logos/Figma_Symbol_0.svg"
@@ -199,7 +190,7 @@
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
-      <h1 id="projects-heading" class="silkscreen--regular">- PROJECTS -</h1>
+      <h1 id="projects-heading">- PROJECTS -</h1>
 
       <ul class="projects__list" role="list">
         <!-- Trivia Game (In Progress) -->
@@ -226,11 +217,11 @@
               >
                 Trivia Game (Coming Soon)
               </h2>
-              <p class="project__summary roboto-mono--normal">
+              <p class="project__summary">
                 Real-time quiz app with score persistence & adaptive difficulty.
                 <span class="project__tech">React · Spring Boot</span>
               </p>
-              <p class="project__links roboto-mono--normal">
+              <p class="project__links">
                 <span aria-label="demo coming soon">Demo (soon)</span> &middot;
                 <span>Repo (private)</span>
               </p>
@@ -260,14 +251,14 @@
               <h2 id="proj-employee-title" class="project__title">
                 Employee Creator FullStack App
               </h2>
-              <p class="project__summary roboto-mono--normal">
+              <p class="project__summary">
                 Internal HR CRUD tool streamlining record creation with
                 validation on front-end and backend API.
                 <span class="project__tech">
                   React · Spring Boot · REST · MySQL
                 </span>
               </p>
-              <p class="project__links roboto-mono--normal">
+              <p class="project__links">
                 <a
                   href="https://d3bcyx0s1yb5do.cloudfront.net/"
                   target="_blank"
@@ -312,11 +303,11 @@
               >
                 Todo App
               </h2>
-              <p class="project__summary roboto-mono--normal">
+              <p class="project__summary">
                 Cross-device task manager with optimistic UI & instant sync.
                 <span class="project__tech">React · Spring · REST · MySQL</span>
               </p>
-              <p class="project__links roboto-mono--normal">
+              <p class="project__links">
                 <span>Live (coming)</span> &middot;
                 <a
                   href="https://github.com/carriegale2710/todos-app"
@@ -354,12 +345,12 @@
               >
                 E-commerce Platform
               </h2>
-              <p class="project__summary roboto-mono--normal">
+              <p class="project__summary">
                 Contributed catalogue & cart flow; reduced add-to-cart latency
                 (metric pending).
                 <span class="project__tech">Firebase (Auth/DB) · React</span>
               </p>
-              <p class="project__links roboto-mono--normal">
+              <p class="project__links">
                 <span>Live (internal)</span> &middot;
                 <a
                   href="https://github.com/carriegale2710/e-commerce"
@@ -397,12 +388,12 @@
               >
                 Minesweeper Game
               </h2>
-              <p class="project__summary roboto-mono--normal">
+              <p class="project__summary">
                 Console logic game with difficulty levels
                 <!-- & >90% test coverage. -->
                 <span class="project__tech">Java</span>
               </p>
-              <p class="project__links roboto-mono--normal">
+              <p class="project__links">
                 <span>Live (CLI)</span> &middot;
                 <a
                   href="https://github.com/carriegale2710/minesweeper"
@@ -419,30 +410,19 @@
     </section>
 
     <section id="contact">
-      <h1 class="silkscreen--regular">Contact me!</h1>
+      <h1>Contact me!</h1>
       <div id="contact-wrapper">
-        <a
-          class="roboto-mono--normal"
-          href="https://www.linkedin.com/in/carrie-gale/"
-          >@ LinkedIn</a
-        >
-        <a class="roboto-mono--normal" href="https://github.com/carriegale2710/"
-          >@ GitHub</a
-        >
+        <a href="https://www.linkedin.com/in/carrie-gale/">@ LinkedIn</a>
+        <a href="https://github.com/carriegale2710/">@ GitHub</a>
       </div>
     </section>
 
     <footer class="footer">
-      <p class="roboto-mono--normal">
+      <p>
         Built in HTML/CSS and SASS. <br /><br />
         Carrie Gale, 2025.
       </p>
       <!-- Single logo instance -->
-      <img
-        id="footer-logo"
-        src="./assets/final/images/mascot.png"
-        alt="personal logo"
-      />
     </footer>
   </body>
 </html>

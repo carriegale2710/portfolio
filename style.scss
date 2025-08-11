@@ -1,19 +1,18 @@
 //import partials
+@use "./partials/clickables";
 @use "./partials/colors";
 @use "./partials/fonts";
-@use "./partials/mixins";
-@use "./partials/wrappers";
-@use "./partials/clickables";
-@use "./partials/media-queries";
 @use "./partials/images";
+@use "./partials/media-queries";
+@use "./partials/mixins";
 
 // import sections
-@use "./sections/nav";
-@use "./sections/header";
 @use "./sections/about";
-@use "./sections/projects";
 @use "./sections/contact";
 @use "./sections/footer";
+@use "./sections/nav";
+@use "./sections/header";
+@use "./sections/projects";
 @use "./sections/techstack";
 
 //BEM SYNTAX
@@ -41,12 +40,57 @@ body {
   @include mixins.hide-scrollbar;
 }
 
+section {
+  height: fit-content;
+  min-width: 250px;
+}
+
+// Generic image wrapper utility used across site (about section extends this)
+.img-wrapper {
+  @include mixins.max100;
+  overflow: hidden;
+  @include mixins.flex-center;
+}
+
+// Skip/CTA button container
+#button-wrap {
+  margin: 10% 15% 10% 15%;
+}
+
 button {
   //round corners
   border-radius: 20px;
 }
 
-section {
+// TYPOGRAPHY
+
+//applied to all main headings
+h1 {
+  padding: 50px 5%;
+  text-align: center;
+  color: colors.$black-olive;
+  @include fonts.silkscreen(400);
+}
+
+//applies to all subheadings
+h2 {
+  padding: 30px 5%;
+  color: colors.$black-olive;
+  width: 100%;
+  @include fonts.vt323-regular();
+}
+
+//applies to all paragraphs
+a,
+p {
   height: fit-content;
-  min-width: 250px;
+  width: fit-content;
+  @include fonts.roboto-mono(normal);
+}
+
+#logo-text {
+  //sizing
+  width: fit-content;
+  margin: 0;
+  padding: 0;
 }

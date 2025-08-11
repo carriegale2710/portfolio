@@ -23,4 +23,8 @@ nav {
   @include mq.laptop-up {
     display: flex;
   }
+
+  a {
+    @include fonts.space-mono;
+  }
 }

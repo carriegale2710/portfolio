@@ -65,13 +65,13 @@ portfolio/
 ### 🔄 In Progress
 
 - [ ] BEM naming convention implementation
-- [ ] Responsive design optimization
-- [ ] Content integration
+- [x] Responsive design optimization
+- [x] Content integration
 
 ### 📋 Next Features
 
-- [ ] Logo integration in tech stack
-- [ ] Server hosting deployment
+- [x] Logo integration in tech stack
+- [x] Server hosting deployment
 - [ ] Content refinement and copywriting
 
 ### 📈 Future Enhancements
@@ -84,5 +84,7 @@ portfolio/
 - Interactive contact form
 - Downloadable resume (PDF)
 - Advanced animations and micro-interactions
-- Performance optimization
 - SEO improvements
+- use cat mascot as mouse cursor?
+- about me carousel (for storytelling) <- info ->
+- demo gifs

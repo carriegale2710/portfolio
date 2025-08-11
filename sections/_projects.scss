@@ -39,14 +39,14 @@
 }
 
 .projects__card {
-  border: 1px solid darken(colors.$black-olive, 10%);
+  border: 1px solid colors.$black-olive;
   border-radius: 10px;
   overflow: hidden;
   transition: background-color 0.3s;
   padding: 3em;
 
   &:hover {
-    background-color: lighten(rgba(112, 112, 112, 0.271), 5%);
+    background-color: rgba(112, 112, 112, 0.271);
   }
 
   img {
