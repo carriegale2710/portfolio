@@ -14,14 +14,13 @@
 
   ul {
     list-style: none;
-    padding: 20px;
-    margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
 
   p {
     color: colors.$beige;
+    padding: 10px 0px;
   }
   a {
     color: white;
@@ -43,30 +42,41 @@
   border-radius: 10px;
   overflow: hidden;
   transition: background-color 0.3s;
-  padding: 3em;
 
   &:hover {
     background-color: rgba(112, 112, 112, 0.271);
-  }
-
-  img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
   }
 
   figcaption {
     display: none;
   }
 
-  p {
-    padding: 30px 0px;
-  }
+  margin: 15px;
 }
 
 .project__tech {
   display: block;
-  padding: 20px 0;
   font-size: 0.8em;
   color: colors.$beige;
+}
+
+.project__body {
+  padding: 1em 2.5em;
+}
+
+.project__media {
+  height: 300px;
+
+  &-link {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0px;
+  }
+  padding: 0;
+  margin: 0;
 }
