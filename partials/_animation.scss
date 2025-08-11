@@ -1,0 +1,78 @@
+// .line-1 {
+//   top: 50%;
+//   margin: 0 auto;
+//   border-right: 2px solid rgba(5, 5, 5, 0.75);
+//   font-size: 180%;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   transform: translateY(-50%);
+// }
+
+// /* Animation */
+// .anim-typewriter-1 {
+//   animation: typewriter 3s steps(26) 1s 1 normal both,
+//     blinkTextCursor 500ms steps(26) infinite normal;
+// }
+
+// .anim-typewriter-2 {
+//   animation: typewriter 4s steps(27) 3s 1 normal both,
+//     blinkTextCursor 500ms steps(27) 3s infinite normal;
+// }
+
+// //typing
+// @keyframes typewriter {
+//   from {
+//     width: 0;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
+
+// // blinking
+// @keyframes blinkTextCursor {
+//   from {
+//     border-right-color: rgba(0, 0, 0, 0.75);
+//   }
+//   to {
+//     border-right-color: transparent;
+//     display: none;
+//   }
+// }
+
+.type {
+  color: #0000;
+  background: linear-gradient(-90deg, #000000 5px, #0000 0) 10px 0,
+    linear-gradient(#000000 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: blink 0.7s infinite steps(1),
+    type calc(var(--n) * 0.05s) steps(var(--n)) forwards;
+}
+
+@keyframes type {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes blink {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation: appear 1.5s 2s forwards; // 1.5s duration, 2s delay
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

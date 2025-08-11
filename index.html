@@ -23,7 +23,7 @@
     <nav id="nav">
       <a id="home-button" href="./index.html">
         <!-- idea: create flashing animation for type cursor below -->
-        <p id="logo-text" class="silkscreen--regular">Carrie Gale_</p>
+        <p id="logo-text">Carrie Gale_</p>
       </a>
       <span>
         <a href="#about">About</a>
@@ -35,12 +35,24 @@
     <header id="header">
       <h1>Carrie Gale</h1>
       <h2>
-        A Junior Software Engineer_
-        <br />
-        Based in Sydney, Australia
+        <span class="type" style="--n: 55"
+          >A Junior Software Engineer Based in Sydney_</span
+        >
       </h2>
-      <a href="#projects" id="button-wrap">
-        <button type="button" id="skip-button">See my projects :3</button>
+
+      <a
+        href="#projects"
+        id="button-wrap"
+        style="position: relative; display: inline-block"
+      >
+        <button type="button" id="skip-button" class="appear">
+          <p>VIEW MY PROJECTS :3</p>
+          <img
+            src="./assets/final/images/retro-computer-pixel.jpg"
+            alt="retro-computer-pixel"
+            style="height: 200px; border-radius: 8px; display: block"
+          />
+        </button>
       </a>
     </header>
 
@@ -48,12 +60,12 @@
       <h1>- ABOUT ME -</h1>
 
       <div class="about__aside">
-        <div class="about__img-wrapper">
-          <img
-            src="./assets/final/images/ema-skye-emawriteskye.gif"
-            alt="animated character "
-          />
-        </div>
+        <div class="about__img-wrapper"></div>
+        <img
+          src="./assets/final/images/ema-skye-emawriteskye.gif"
+          alt="animated character "
+          style="width: 200px"
+        />
         <div class="about__text-wrapper">
           <h2>What I do...</h2>
           <p>
@@ -69,7 +81,7 @@
       <h1>- TECH STACK -</h1>
 
       <section>
-        <h2 class="dotgothic16--regular">Front-End tools:</h2>
+        <h2>Front-End tools:</h2>
 
         <div class="techstack__list">
           <div class="techstack__item">
@@ -122,7 +134,7 @@
       </section>
 
       <section>
-        <h2 class="dotgothic16--regular">Back-End tools:</h2>
+        <h2>Back-End tools:</h2>
         <div class="techstack__list">
           <div class="techstack__item">
             <img
@@ -162,7 +174,7 @@
       </section>
 
       <section>
-        <h2 class="dotgothic16--regular">Design tools:</h2>
+        <h2>Design tools:</h2>
         <div class="techstack__list">
           <div class="techstack__item">
             <img
@@ -211,12 +223,7 @@
               </figure>
             </a>
             <div class="project__body">
-              <h2
-                id="proj-trivia-title"
-                class="project__title dotgothic16--regular"
-              >
-                Trivia Game
-              </h2>
+              <h2 id="proj-trivia-title" class="project__title">Trivia Game</h2>
               <p class="project__summary">
                 Real-time quiz app with score persistence & adaptive difficulty.
                 <span class="project__tech"
@@ -306,12 +313,7 @@
               </figure>
             </a>
             <div class="project__body">
-              <h2
-                id="proj-todo-title"
-                class="project__title dotgothic16--regular"
-              >
-                Todo App
-              </h2>
+              <h2 id="proj-todo-title" class="project__title">Todo App</h2>
               <p class="project__summary">
                 Cross-device task manager with optimistic UI & instant sync.
                 <span class="project__tech"
@@ -352,10 +354,7 @@
               </figure>
             </a>
             <div class="project__body">
-              <h2
-                id="proj-ecommerce-title"
-                class="project__title dotgothic16--regular"
-              >
+              <h2 id="proj-ecommerce-title" class="project__title">
                 E-commerce Platform
               </h2>
               <p class="project__summary">
@@ -397,10 +396,7 @@
               </figure>
             </a>
             <div class="project__body">
-              <h2
-                id="proj-minesweeper-title"
-                class="project__title dotgothic16--regular"
-              >
+              <h2 id="proj-minesweeper-title" class="project__title">
                 Minesweeper Game
               </h2>
               <p class="project__summary">
