@@ -40,12 +40,7 @@ body {
   li {
     color: white;
   }
-  #socials {
-    svg {
-      @include mixins.max100;
-      fill: white;
-    }
-  }
+
   button {
     border: none;
     color: white;
@@ -59,6 +54,7 @@ body {
 section {
   height: fit-content;
   min-width: 250px;
+  padding: 200px 20px;
 }
 
 button {

@@ -82,25 +82,17 @@
       >
         <button type="button" id="skip-button" class="appear">
           <p>VIEW MY PROJECTS :3</p>
-          <img
-            src="./assets/final/images/retro-computer-pixel.jpg"
-            alt="retro-computer-pixel"
-            style="height: 200px; border-radius: 8px; display: block"
-          />
         </button>
       </a>
     </header>
 
     <section id="about" class="about">
-      <h1>- ABOUT ME -</h1>
-
       <div class="about__aside">
-        <div class="about__img-wrapper"></div>
         <img
           src="./assets/final/images/ema-skye-emawriteskye.gif"
-          alt="animated character "
-          style="width: 200px"
+          alt="animated character"
         />
+        <div class="about__img-wrapper"></div>
         <div class="about__text-wrapper">
           <h2>What I do...</h2>
           <p>
@@ -113,11 +105,9 @@
     </section>
 
     <section class="techstack">
-      <a href=""></a>
-      <h1>- TECH STACK -</h1>
+      <h1>- TECH STACK -</h1> 
 
-      <div class="techstack__category--backend">
-        <h2>Back-End</h2>
+      <div class="techstack__category">
 
         <ul class="techstack__list">
           <li class="techstack__item">
@@ -162,8 +152,7 @@
         </ul>
       </div>
 
-      <div class="techstack__category--frontend">
-        <h2>Front-End</h2>
+      <div class="techstack__category">
 
         <ul class="techstack__list">
           <li class="techstack__item">
@@ -233,9 +222,9 @@
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
-      <h1 id="projects-heading">- PROJECTS -</h1>
+      <h1 >- PROJECTS -</h1>
 
-      <ul  role="list">
+      <ul class="projects__list" role="list">
         <!-- Trivia Game (In Progress) -->
         <li class="projects__card" data-status="in-progress">
           <article class="project" aria-labelledby="proj-trivia-title">
@@ -390,10 +379,10 @@
               <h2 id="proj-ecommerce-title" class="project__title">
                 E-commerce Platform
               </h2>
-              <span class="project__summary">
-                <p> Catalogue & cart flow; add-to-cart and product variant business logic.</p>
-                <p class="project__tech">React JS + SCSS + Firebase (DB)</p>
-              </span>
+              <p class="project__summary">
+                Catalogue & cart flow; add-to-cart and product variant business logic.
+                <span class="project__tech">React JS + SCSS + Firebase (DB)</span>              
+              </p>
               <p class="project__links">
                 <span>Demo (soon)</span> &middot;
                 <a

@@ -57,46 +57,6 @@ a:hover {
   color: #70bd9a;
 }
 
-#home-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#skip-button {
-  text-align: center;
-  border-radius: none;
-  filter: brightness(0.8);
-  background: none;
-  border: none;
-}
-#skip-button:hover {
-  color: #d5d9b4;
-  transform: scale(1.05);
-}
-#skip-button:hover ::shadow {
-  padding: 20px 40px;
-}
-#skip-button p {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 40%;
-  width: 100px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0;
-  text-shadow: 0 5px 16px #000;
-  font-family: "VT323", monospace;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 200%;
-  margin: 2%;
-}
-
 img {
   border-radius: 20px;
   max-height: 100%;
@@ -121,6 +81,7 @@ img {
   width: 100%;
   height: fit-content;
   padding: 50px 0;
+  font-size: 200%;
 }
 @media only screen and (min-width: 600px) {
   .about {
@@ -137,11 +98,12 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 .about__aside img {
-  max-width: 300px;
-  margin: 50px;
+  width: 500px;
+  margin: 20px;
 }
 .about__img-wrapper {
   display: flex;
@@ -161,7 +123,7 @@ img {
   padding-bottom: 30px;
   width: fit-content;
   min-width: 300px;
-  max-width: 30%;
+  max-width: 90%;
 }
 
 .contact {
@@ -172,6 +134,7 @@ img {
   width: 100%;
   height: 100vh;
   padding: 50px 0;
+  background-color: black;
 }
 @media only screen and (min-width: 600px) {
   .contact {
@@ -183,35 +146,40 @@ img {
     padding: 60px;
   }
 }
-.contact h2 {
+.contact h1 {
   text-align: center;
+  color: white;
+  font-size: 200%;
 }
 .contact ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.contact ul li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact ul li a {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contact ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact ul li a {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
-  padding: 40px;
-  text-indent: 10px;
-  font-size: large;
+}
+.contact ul li svg {
+  min-width: 100px;
+  min-height: 100px;
+  min-width: 20px;
+  min-height: 150px;
+  fill: currentColor;
 }
 
 footer {
@@ -282,37 +250,40 @@ header {
   width: 100vw;
   margin: 0;
   padding: 2em;
+  font-size: larger;
 }
-header h1,
+header h1 {
+  font-size: 3rem;
+}
 header h2 {
   display: block;
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-header h1 {
-  margin-bottom: 0.5em;
-  font-size: 3rem;
+  margin-bottom: 1em;
 }
 
 #projects {
   height: fit-content;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#projects ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+.projects__list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  height: fit-content;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 50px 0;
+}
 .projects__card {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #2f3328;
   overflow: hidden;
   margin: 15px;
@@ -335,6 +306,10 @@ header h1 {
   font-size: 0.8em;
   font-weight: 200;
   padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .project__body {
   padding: 1em 2.5em;
@@ -362,35 +337,38 @@ header h1 {
 
 .techstack {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  max-width: 100%;
-  padding: 50px 20px;
+  flex-wrap: wrap;
+  justify-self: center;
+  max-width: 90%;
+  align-items: center;
 }
-.techstack h2 {
-  text-align: center;
+.techstack__category {
+  min-width: 300px;
 }
 .techstack__list {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(3, minmax(80px, 1fr));
-  height: fit-content;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  max-width: 100%;
-  margin: 50px 0;
 }
 .techstack__item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
-}
-.techstack__item img {
-  max-height: 30px;
-  border-radius: 0;
+  border: 1px solid rgb(124, 117, 117);
+  gap: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -423,11 +401,6 @@ body::-webkit-scrollbar {
 .dark-mode li {
   color: white;
 }
-.dark-mode #socials svg {
-  max-height: 100%;
-  max-width: 100%;
-  fill: white;
-}
 .dark-mode button {
   border: none;
   color: white;
@@ -440,6 +413,7 @@ body::-webkit-scrollbar {
 section {
   height: fit-content;
   min-width: 250px;
+  padding: 200px 20px;
 }
 
 button {

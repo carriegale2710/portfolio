@@ -7,29 +7,36 @@
   @include mixins.flex-center;
   @include mixins.full-width;
   @include mixins.full-height;
-
   @include mixins.section-padding(50px 0, 40px, 60px);
+  background-color: black;
 
-  h2 {
+  h1 {
     text-align: center;
+    color: white;
+    font-size: 200%;
   }
 
   ul {
-    @include mixins.flex-center;
+    @include mixins.flex-center(row);
     flex-wrap: wrap;
+    width: 100%;
 
     li {
-      @include mixins.flex-center;
+      @include mixins.flex-center(row);
+      flex-wrap: wrap;
 
       a {
-        @include mixins.full-width;
-        @include mixins.flex-center(row);
-        @include mixins.card-style(20px);
-        max-width: 400px;
+        gap: 20px;
+        @include mixins.flex-center(column);
         margin: 10px;
-        padding: 40px;
-        text-indent: 10px;
-        font-size: large;
+      }
+
+      svg {
+        min-width: 100px;
+        min-height: 100px;
+        min-width: 20px;
+        min-height: 150px;
+        fill: currentColor;
       }
     }
   }
