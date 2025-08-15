@@ -5,28 +5,13 @@
 
 #projects {
   height: fit-content;
-  background-color: colors.$black;
   width: 100%;
   @include mixins.flex-center;
-  h1 {
-    color: colors.$beige;
-  }
+
   ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  }
-  p {
-    color: colors.$beige;
-    padding: 10px 0;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-      color: colors.$mint;
-    }
   }
 }
 

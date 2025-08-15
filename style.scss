@@ -16,18 +16,6 @@
 @use "./sections/projects";
 @use "./sections/techstack";
 
-//BEM SYNTAX
-// Block component:
-// .btn {}
-
-// Element that depends upon the block:
-// .btn__price {}
-
-// Modifier that changes the style of the block:
-// .btn--orange {}
-// .btn--big {}
-//
-
 * {
   box-sizing: border-box;
 }
@@ -39,6 +27,17 @@ body {
   scroll-behavior: smooth;
   width: 100vw;
   @include mixins.hide-scrollbar;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  h1,
+  h2,
+  p,
+  span {
+    color: white;
+  }
 }
 
 section {
