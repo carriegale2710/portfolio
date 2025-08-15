@@ -57,6 +57,44 @@ a:hover {
   color: #70bd9a;
 }
 
+button {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: black;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#skip-button {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: white;
+}
+#skip-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
 img {
   border-radius: 20px;
   max-height: 100%;
@@ -102,7 +140,8 @@ img {
   flex-wrap: wrap;
 }
 .about__aside img {
-  width: 500px;
+  min-height: 250px;
+  max-height: 400px;
   margin: 20px;
 }
 .about__img-wrapper {
@@ -343,6 +382,7 @@ header h2 {
   flex-wrap: wrap;
   justify-self: center;
   max-width: 90%;
+  font-size: larger;
   align-items: center;
 }
 .techstack__category {
@@ -413,7 +453,7 @@ body::-webkit-scrollbar {
 section {
   height: fit-content;
   min-width: 250px;
-  padding: 200px 20px;
+  padding: 50px 20px;
 }
 
 button {
@@ -427,9 +467,28 @@ button {
   background-color: transparent;
   border: 1px solid black;
   margin: 0 0.2rem;
-  fill: white;
+  fill: black;
 }
 button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#skip-button {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: white;
+}
+#skip-button:hover {
   background-color: black;
   color: white;
   cursor: pointer;

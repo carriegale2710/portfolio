@@ -54,27 +54,7 @@ body {
 section {
   height: fit-content;
   min-width: 250px;
-  padding: 200px 20px;
-}
-
-button {
-  @include fonts.space-mono;
-  //default button styles
-  border-radius: 20px;
-  display: flex;
-  justify-items: center;
-  //pointer hand
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid black;
-  margin: 0 0.2rem;
-  fill: white;
-
-  &:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-  }
+  padding: 50px 20px;
 }
 
 // TYPOGRAPHY

@@ -16,7 +16,8 @@
     text-align: center;
     flex-wrap: wrap;
     img {
-      width: 500px;
+      min-height: 250px;
+      max-height: 400px;
       margin: 20px;
     }
   }

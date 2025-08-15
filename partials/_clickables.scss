@@ -15,3 +15,43 @@ a {
     color: colors.$mint;
   }
 }
+
+button {
+  @include fonts.space-mono;
+  //default button styles
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  //pointer hand
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+#skip-button {
+  @include fonts.space-mono;
+  //default button styles
+  border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  //pointer hand
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: white;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
