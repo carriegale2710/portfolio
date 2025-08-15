@@ -456,44 +456,6 @@ section {
   padding: 50px 20px;
 }
 
-button {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  border-radius: 20px;
-  display: flex;
-  justify-items: center;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid black;
-  margin: 0 0.2rem;
-  fill: black;
-}
-button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-#skip-button {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
-  border-radius: 20px;
-  display: flex;
-  justify-items: center;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid black;
-  margin: 0 0.2rem;
-  fill: white;
-}
-#skip-button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
 li {
   list-style: none;
 }
