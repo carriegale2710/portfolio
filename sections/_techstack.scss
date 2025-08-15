@@ -5,17 +5,17 @@
 
 .techstack {
   @include mixins.flex-center;
+  @include mixins.fit-content;
   max-width: 100%;
-  height: fit-content;
   padding: 50px 20px;
   h2 {
     text-align: center;
   }
   &__list {
     @include mixins.grid-container;
+    @include mixins.fit-content;
     flex-wrap: wrap;
     max-width: 100%;
-    height: fit-content;
     margin: 50px 0;
   }
   &__item {

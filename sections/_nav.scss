@@ -48,13 +48,4 @@
     text-decoration: none;
     padding: 10px;
   }
-
-  &_socials {
-    @include mixins.flex-center(row);
-    height: 100%;
-  }
-
-  &_buttons {
-    @include mixins.flex-center(row);
-  }
 }

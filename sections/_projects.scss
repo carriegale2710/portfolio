@@ -4,8 +4,8 @@
 @use "../partials/mixins";
 
 #projects {
-  height: fit-content;
-  width: 100%;
+  @include mixins.fit-content;
+  @include mixins.full-width;
   @include mixins.flex-center;
 
   ul {
@@ -15,47 +15,49 @@
   }
 }
 
-.project__title {
-  color: colors.$beige;
-  @include fonts.dotgothic16-regular;
-}
+.projects {
+  &__card {
+    @include mixins.card-style;
+    @include mixins.hover-effect;
+    border: 1px solid colors.$black-olive;
+    overflow: hidden;
+    margin: 15px;
 
-.projects__card {
-  border: 1px solid colors.$black-olive;
-  border-radius: 10px;
-  overflow: hidden;
-  transition: background-color 0.3s;
-  margin: 15px;
-  &:hover {
-    background-color: rgba(112, 112, 112, 0.271);
-  }
-  figcaption {
-    display: none;
+    figcaption {
+      display: none;
+    }
   }
 }
 
-.project__tech {
-  display: block;
-  font-size: 0.8em;
-  color: colors.$beige;
-}
-
-.project__body {
-  padding: 1em 2.5em;
-}
-
-.project__media {
-  height: 300px;
-  padding: 0;
-  margin: 0;
-  &-link {
-    padding: 0;
+.project {
+  &__title {
+    @include fonts.dotgothic16-regular;
   }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 0;
+
+  &__tech {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 200;
+    padding-top: 1em;
+  }
+
+  &__body {
+    padding: 1em 2.5em;
+    text-align: center;
+    @include mixins.flex-center;
+  }
+
+  &__media {
+    height: 300px;
+    @include mixins.reset-spacing;
+
+    &-link {
+      padding: 0;
+    }
+    img {
+      @include mixins.image-fill;
+      object-position: top;
+      border-radius: 0;
+    }
   }
 }

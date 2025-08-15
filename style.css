@@ -1,3 +1,52 @@
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.type {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(-90deg, #000000 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#000000 0 0) 0 0;
+  background-size: calc(var(--n) * 1ch) 200%;
+  -webkit-background-clip: padding-box, text;
+  background-clip: padding-box, text;
+  background-repeat: no-repeat;
+  animation: blink 0.7s infinite steps(1), type calc(var(--n) * 0.05s) steps(var(--n)) forwards;
+}
+
+@keyframes type {
+  from {
+    background-size: 0 200%;
+  }
+}
+@keyframes blink {
+  50% {
+    background-position: 0 -100%, 0 0;
+  }
+}
+.appear {
+  opacity: 0;
+  animation: appear 1.5s 2s forwards;
+}
+
 /* SCSS HEX */
 a {
   padding: 2px 5px 2px 5px;
@@ -64,63 +113,13 @@ img {
   max-height: 30px;
 }
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(0, 0, 0, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.type {
-  color: rgba(0, 0, 0, 0);
-  background: linear-gradient(-90deg, #000000 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#000000 0 0) 0 0;
-  background-size: calc(var(--n) * 1ch) 200%;
-  -webkit-background-clip: padding-box, text;
-  background-clip: padding-box, text;
-  background-repeat: no-repeat;
-  animation: blink 0.7s infinite steps(1), type calc(var(--n) * 0.05s) steps(var(--n)) forwards;
-}
-
-@keyframes type {
-  from {
-    background-size: 0 200%;
-  }
-}
-@keyframes blink {
-  50% {
-    background-position: 0 -100%, 0 0;
-  }
-}
-.appear {
-  opacity: 0;
-  animation: appear 1.5s 2s forwards;
-}
-
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d5d9b4;
-  height: fit-content;
   width: 100%;
+  height: fit-content;
   padding: 50px 0;
 }
 @media only screen and (min-width: 600px) {
@@ -149,8 +148,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   border-radius: 8px;
+  box-shadow: none;
+  overflow: hidden;
 }
 .about__text-wrapper {
   display: flex;
@@ -171,33 +171,47 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
+  padding: 50px 0;
 }
-.contact__list {
+@media only screen and (min-width: 600px) {
+  .contact {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contact {
+    padding: 60px;
+  }
+}
+.contact h2 {
+  text-align: center;
+}
+.contact ul {
   display: flex;
-  flex-direction: col;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
 }
-.contact__list__item {
+.contact ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.contact__list__item a {
-  width: 500px;
+.contact ul li a {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #d5d9b4;
   border-radius: 20px;
-  margin: 10px;
-  padding: 15px;
-  text-indent: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 10px;
+  padding: 40px;
+  text-indent: 10px;
+  font-size: large;
 }
 
 footer {
@@ -257,19 +271,6 @@ footer {
   text-decoration: none;
   padding: 10px;
 }
-.nav_socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.nav_buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 header {
   display: flex;
@@ -308,19 +309,12 @@ header h1 {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
-.project__title {
-  color: #d5d9b4;
-  font-family: "DotGothic16", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-}
-
 .projects__card {
-  border: 1px solid #2f3328;
   border-radius: 10px;
-  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
+  border: 1px solid #2f3328;
+  overflow: hidden;
   margin: 15px;
 }
 .projects__card:hover {
@@ -330,20 +324,30 @@ header h1 {
   display: none;
 }
 
+.project__title {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
 .project__tech {
   display: block;
   font-size: 0.8em;
-  color: #d5d9b4;
+  font-weight: 200;
+  padding-top: 1em;
 }
-
 .project__body {
   padding: 1em 2.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .project__media {
   height: 300px;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 .project__media-link {
   padding: 0;
@@ -361,8 +365,8 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
   height: fit-content;
+  max-width: 100%;
   padding: 50px 20px;
 }
 .techstack h2 {
@@ -372,9 +376,9 @@ header h1 {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, minmax(80px, 1fr));
+  height: fit-content;
   flex-wrap: wrap;
   max-width: 100%;
-  height: fit-content;
   margin: 50px 0;
 }
 .techstack__item {
@@ -411,30 +415,31 @@ body::-webkit-scrollbar {
   background-color: black;
   color: white;
 }
+.dark-mode a,
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode p,
-.dark-mode span {
+.dark-mode span,
+.dark-mode li {
   color: white;
+}
+.dark-mode #socials svg {
+  max-height: 100%;
+  max-width: 100%;
+  fill: white;
+}
+.dark-mode button {
+  border: none;
+  color: white;
+}
+.dark-mode button:hover {
+  background-color: white;
+  color: black;
 }
 
 section {
   height: fit-content;
   min-width: 250px;
-}
-
-.img-wrapper {
-  max-height: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#button-wrap {
-  margin: 10% 15% 10% 15%;
 }
 
 button {
@@ -490,10 +495,6 @@ h2 {
   margin: 2%;
 }
 
-svg {
-  fill: currentColor;
-}
-
 p {
   height: fit-content;
   width: fit-content;
@@ -501,12 +502,6 @@ p {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-}
-
-#logo-text {
-  width: fit-content;
-  margin: 0;
-  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

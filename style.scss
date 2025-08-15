@@ -1,11 +1,11 @@
 //import partials
+@use "./partials/animation";
 @use "./partials/clickables";
 @use "./partials/colors";
 @use "./partials/fonts";
 @use "./partials/images";
 @use "./partials/media-queries";
 @use "./partials/mixins";
-@use "./partials/animation";
 
 // import sections
 @use "./sections/about";
@@ -32,29 +32,33 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
+  a,
   h1,
   h2,
   p,
-  span {
+  span,
+  li {
     color: white;
+  }
+  #socials {
+    svg {
+      @include mixins.max100;
+      fill: white;
+    }
+  }
+  button {
+    border: none;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
   }
 }
 
 section {
   height: fit-content;
   min-width: 250px;
-}
-
-// Generic image wrapper utility used across site (about section extends this)
-.img-wrapper {
-  @include mixins.max100;
-  overflow: hidden;
-  @include mixins.flex-center;
-}
-
-// Skip/CTA button container
-#button-wrap {
-  margin: 10% 15% 10% 15%;
 }
 
 button {
@@ -109,21 +113,10 @@ h2 {
   @include fonts.vt323-regular();
 }
 
-svg {
-  fill: currentColor;
-}
-
 //applies to all paragraphs
 
 p {
   height: fit-content;
   width: fit-content;
   @include fonts.roboto-mono(normal);
-}
-
-#logo-text {
-  //sizing
-  width: fit-content;
-  margin: 0;
-  padding: 0;
 }
