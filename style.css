@@ -64,6 +64,30 @@ img {
   max-height: 30px;
 }
 
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .type {
   color: rgba(0, 0, 0, 0);
   background: linear-gradient(-90deg, #000000 5px, rgba(0, 0, 0, 0) 0) 10px 0, linear-gradient(#000000 0 0) 0 0;
@@ -89,14 +113,6 @@ img {
   animation: appear 1.5s 2s forwards;
 }
 
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .about {
   display: flex;
   flex-direction: column;
@@ -104,8 +120,8 @@ img {
   align-items: center;
   background-color: #d5d9b4;
   height: fit-content;
-  padding: 50px 0px;
   width: 100%;
+  padding: 50px 0;
 }
 @media only screen and (min-width: 600px) {
   .about {
@@ -130,6 +146,7 @@ img {
 }
 .about__img-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -184,6 +201,10 @@ img {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 2vw;
 }
@@ -222,11 +243,13 @@ footer {
   align-items: center;
   height: 100%;
 }
-.nav_links {
+.nav_links, .nav_socials, .nav_buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.nav_links {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -255,20 +278,19 @@ header {
   text-align: center;
   height: 98vh;
   width: 100vw;
-  margin: 0px;
+  margin: 0;
   padding: 2em;
+}
+header h1,
+header h2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 header h1 {
   margin-bottom: 0.5em;
   font-size: 3rem;
-  display: block;
-  width: 100%;
-}
-header h2 {
-  display: block;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
 }
 
 #projects {
@@ -290,7 +312,7 @@ header h2 {
 }
 #projects p {
   color: #d5d9b4;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 #projects a {
   color: white;
@@ -335,18 +357,18 @@ header h2 {
 
 .project__media {
   height: 300px;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 .project__media-link {
-  padding: 0px;
+  padding: 0;
 }
 .project__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .techstack {
@@ -368,7 +390,7 @@ header h2 {
   flex-wrap: wrap;
   max-width: 100%;
   height: fit-content;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 .techstack__item {
   display: flex;

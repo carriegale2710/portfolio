@@ -37,8 +37,12 @@
     height: 100%;
   }
 
-  &_links {
+  &_links,
+  &_socials,
+  &_buttons {
     @include mixins.flex-center(row);
+  }
+  &_links {
     @include fonts.space-mono;
     text-decoration: none;
     padding: 10px;

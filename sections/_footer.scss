@@ -4,6 +4,7 @@
 @use "../partials/mixins";
 
 footer {
+  @include mixins.flex-center;
   text-align: center;
   padding: 2vw;
 }

@@ -8,13 +8,11 @@
   @include mixins.flex-center;
   background-color: colors.$beige;
   height: fit-content;
-  padding: 50px 0px;
   width: 100%;
-
+  padding: 50px 0;
   @include mq.tablet-up {
     padding: 40px;
   }
-
   @include mq.laptop-up {
     padding: 60px;
   }
@@ -22,7 +20,6 @@
   &__aside {
     @include mixins.flex-center(row);
     flex-wrap: wrap;
-
     img {
       max-width: 300px;
       margin: 50px;
@@ -30,21 +27,15 @@
   }
 
   &__img-wrapper {
-    // image wrapper styles (copied from .img-wrapper utility)
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flex-center;
     overflow: hidden;
     border-radius: 8px;
   }
 
   &__text-wrapper {
-    //alignment
-    @include mixins.flex-center();
+    @include mixins.flex-center;
     flex-wrap: wrap;
-    //spacing
     padding-bottom: 30px;
-    //sizing
     width: fit-content;
     min-width: 300px;
     max-width: 30%;

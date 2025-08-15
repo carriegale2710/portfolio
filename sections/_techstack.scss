@@ -8,26 +8,18 @@
   max-width: 100%;
   height: fit-content;
   padding: 50px 20px;
-
   h2 {
     text-align: center;
   }
-
   &__list {
-    //alignment
     @include mixins.grid-container;
     flex-wrap: wrap;
-    //sizing
     max-width: 100%;
     height: fit-content;
-    //spacing
-    margin: 50px 0px;
+    margin: 50px 0;
   }
-
   &__item {
-    //alignment
     @include mixins.grid-item;
-
     img {
       max-height: 30px;
       border-radius: 0;

@@ -1,45 +1,43 @@
-// .line-1 {
-//   top: 50%;
-//   margin: 0 auto;
-//   border-right: 2px solid rgba(5, 5, 5, 0.75);
-//   font-size: 180%;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   transform: translateY(-50%);
-// }
+// Reusable animation mixins
+@mixin typewriter($duration: 3s, $steps: 26, $delay: 1s) {
+  animation: typewriter $duration steps($steps) $delay 1 normal both,
+    blinkTextCursor 500ms steps($steps) infinite normal;
+}
 
-// /* Animation */
-// .anim-typewriter-1 {
-//   animation: typewriter 3s steps(26) 1s 1 normal both,
-//     blinkTextCursor 500ms steps(26) infinite normal;
-// }
+@mixin appear($duration: 1.5s, $delay: 2s) {
+  opacity: 0;
+  animation: appear $duration $delay forwards;
+}
 
-// .anim-typewriter-2 {
-//   animation: typewriter 4s steps(27) 3s 1 normal both,
-//     blinkTextCursor 500ms steps(27) 3s infinite normal;
-// }
+// Keyframes
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
-// //typing
-// @keyframes typewriter {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 
-// // blinking
-// @keyframes blinkTextCursor {
-//   from {
-//     border-right-color: rgba(0, 0, 0, 0.75);
-//   }
-//   to {
-//     border-right-color: transparent;
-//     display: none;
-//   }
-// }
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+// Typewriter effect
 .type {
   color: #0000;
   background: linear-gradient(-90deg, #000000 5px, #0000 0) 10px 0,
@@ -64,15 +62,5 @@
 }
 
 .appear {
-  opacity: 0;
-  animation: appear 1.5s 2s forwards; // 1.5s duration, 2s delay
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  @include appear();
 }

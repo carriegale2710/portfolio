@@ -12,7 +12,6 @@
     @include mixins.flex-center(col);
     flex-wrap: wrap;
     width: 100%;
-
     &__item {
       @include mixins.flex-center;
       a {
