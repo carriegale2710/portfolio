@@ -3,7 +3,7 @@
 @use "../partials/mixins";
 @use "../partials/media-queries" as mq;
 
-nav {
+.nav {
   // border: 1px dotted red;
 
   //alignment
@@ -18,13 +18,38 @@ nav {
   overflow: hidden;
   background-color: white;
 
-  display: none;
+  // display: none;
   //hide
   @include mq.laptop-up {
     display: flex;
   }
 
-  a {
+  p {
     @include fonts.space-mono;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  div {
+    @include mixins.flex-center(row);
+    height: 100%;
+  }
+
+  &_links {
+    @include mixins.flex-center(row);
+    @include fonts.space-mono;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  &_socials {
+    @include mixins.flex-center(row);
+    height: 100%;
+  }
+
+  &_buttons {
+    @include mixins.flex-center(row);
   }
 }

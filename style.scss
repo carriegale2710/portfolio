@@ -59,11 +59,40 @@ section {
 }
 
 button {
-  //round corners
+  @include fonts.space-mono;
+  //default button styles
   border-radius: 20px;
+  display: flex;
+  justify-items: center;
+  //pointer hand
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 0 0.2rem;
+  fill: white;
+
+  &:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 // TYPOGRAPHY
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+
+  &:hover {
+    text-decoration: underline;
+    color: colors.$mint;
+  }
+}
 
 //applied to all main headings
 h1 {
@@ -81,8 +110,12 @@ h2 {
   @include fonts.vt323-regular();
 }
 
+svg {
+  fill: currentColor;
+}
+
 //applies to all paragraphs
-a,
+
 p {
   height: fit-content;
   width: fit-content;

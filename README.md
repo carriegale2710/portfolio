@@ -49,6 +49,8 @@ portfolio/
 - Design documentation available in `/documentation/`
 - Branch-based development for feature isolation
 
+## Change Log
+
 ### 🚀 Current Status
 
 **Version:** 1.0 (In Development)  
@@ -61,30 +63,39 @@ portfolio/
 - [x] Brand color palette and visual identity
 - [x] Project structure and SCSS organization
 - [x] Basic layout foundation
+- [x] BEM naming convention implementation
+- [x] Content integration
+- [x] Logo integration in tech stack
+- [x] Server hosting deployment
+- [x] Content refinement and copywriting
+- [x] Advanced animations (typing effects, cursor animations)
+- [x] Pixel computer image animation
 
 ### 🔄 In Progress
 
-- [ ] BEM naming convention implementation
-- [x] Responsive design optimization
-- [x] Content integration
+- [ ] Dark mode light mode toggle switch
 
 ### 📋 Next Features
 
-- [x] Logo integration in tech stack
-- [x] Server hosting deployment
-- [ ] Content refinement and copywriting
+- [ ] Downloadable resume button (PDF)
+- [ ] Responsive design optimization - centering
 
 ### 📈 Future Enhancements
 
 <!-- parking lot -->
 
-- [ ] Advanced animations (typing effects, cursor animations)
-  - flashing type cursor animation for logo in nav
-  - typing animation for header subtitle
-- Interactive contact form
-- Downloadable resume (PDF)
-- Advanced animations and micro-interactions
-- SEO improvements
-- use cat mascot as mouse cursor?
-- about me carousel (for storytelling) <- info ->
-- demo gifs
+- [ ] tech stack logos in black/white, but color ver on hover
+- [ ] toggle buttons for tech stack (backend,front-end,design) -> reduce scrolling
+- [ ] reveal info on hover for project cards (just show images)
+- [ ] about me carousel (for storytelling) <- info ->
+- [ ] scrolls back to top arrow button
+- [ ] scroll down animation at top
+- [ ] hamburger nav button (mobile)
+- [ ] use cat mascot as mouse cursor?
+- [ ] align project cards
+- [ ] demo gifs
+- [ ] Accessibility testing
+- [ ] Implementing user feedback
+- [ ] Interactive contact form
+- [ ] Advanced animations and micro-interactions
+- [ ] SEO improvements

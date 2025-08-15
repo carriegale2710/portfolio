@@ -4,7 +4,6 @@
 @use "../partials/mixins";
 
 header {
-  // border: red 1px solid;
   @include mixins.flex-center(column);
   text-align: center;
   height: 98vh;

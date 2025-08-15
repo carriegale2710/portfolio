@@ -4,14 +4,6 @@
 @use "../partials/mixins";
 
 footer {
-  //alignment
-  @include mixins.flex-center;
   text-align: center;
-  //spacing
   padding: 2vw;
-  gap: 2vw;
-
-  img {
-    max-height: 20px;
-  }
 }

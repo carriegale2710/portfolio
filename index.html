@@ -20,23 +20,72 @@
   <body>
     <!-- Remember BEM : [block]__[element]--[modifier] -->
 
-    <nav id="nav">
-      <a id="home-button" href="./index.html">
-        <!-- idea: create flashing animation for type cursor below -->
-        <p id="logo-text">Carrie Gale_</p>
-      </a>
-      <span>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </span>
+    <nav class="nav">
+      <ul class="nav_links" role="navigation">
+        <li><a href="#about">/About</a></li>
+        <li><a href="#projects">/Projects</a></li>
+        <li><a href="#contact">/Contact</a></li>
+      </ul>
+      <div>
+        <ul class="nav_socials">
+          <li>
+            <a href="https://www.linkedin.com/in/carrie-gale/" target="_blank">
+              <img
+                src="./assets/final/logos/contact/linkedin.svg"
+                alt="LinkedIn logo"
+                style="height: 30px; margin: 2px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/carriegale2710" target="_blank">
+              <img
+                src="./assets/final/logos/contact/github.svg"
+                alt="GitHub logo"
+                style="height: 24px; margin: 5px"
+              />
+            </a>
+          </li>
+        </ul>
+        <span class="nav_buttons">
+          <button class="nav_theme-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="M396-396q-32-32-58.5-67T289-537q-5 14-6.5 28.5T281-480q0 83 58 141t141 58q14 0 28.5-2t28.5-6q-39-22-74-48.5T396-396Zm57-56q51 51 114 87.5T702-308q-40 51-98 79.5T481-200q-117 0-198.5-81.5T201-480q0-65 28.5-123t79.5-98q20 72 56.5 135T453-452Zm290 72q-20-5-39.5-11T665-405q8-18 11.5-36.5T680-480q0-83-58.5-141.5T480-680q-20 0-38.5 3.5T405-665q-8-19-13.5-38T381-742q24-9 49-13.5t51-4.5q117 0 198.5 81.5T761-480q0 26-4.5 51T743-380ZM440-840v-120h80v120h-80Zm0 840v-120h80V0h-80Zm323-706-57-57 85-84 57 56-85 85ZM169-113l-57-56 85-85 57 57-85 84Zm671-327v-80h120v80H840ZM0-440v-80h120v80H0Zm791 328-85-85 57-57 84 85-56 57ZM197-706l-84-85 56-57 85 85-57 57Zm199 310Z"
+              />
+            </svg>
+          </button>
+          <button class="nav_download-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor"
+              stroke="currentColor"
+            >
+              <path
+                d="m720-120 160-160-56-56-64 64v-167h-80v167l-64-64-56 56 160 160ZM560 0v-80h320V0H560ZM240-160q-33 0-56.5-23.5T160-240v-560q0-33 23.5-56.5T240-880h280l240 240v121h-80v-81H480v-200H240v560h240v80H240Zm0-80v-560 560Z"
+              />
+            </svg>
+            Resume
+          </button>
+        </span>
+      </div>
     </nav>
 
     <header id="header">
       <h1>Carrie Gale</h1>
       <h2>
         <span class="type" style="--n: 55"
-          >A Junior Software Engineer Based in Sydney_</span
+          >A Junior Software Engineer Based in Sydney</span
         >
       </h2>
 
@@ -78,127 +127,123 @@
     </section>
 
     <section class="techstack">
+      <a href=""></a>
       <h1>- TECH STACK -</h1>
 
-      <section>
-        <h2>Front-End tools:</h2>
+      <div class="techstack__category--backend">
+        <h2>Back-End</h2>
 
-        <div class="techstack__list">
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/html5-svgrepo-com.svg"
-              alt="HTML logo"
-            />
-            <p>HTML</p>
-          </div>
-
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/css3-svgrepo-com.svg"
-              alt="CSS logo"
-            />
-            <p>CSS</p>
-          </div>
-
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/typescript-svgrepo-com.svg"
-              alt="Typescript logo"
-            />
-            <p>Typescript</p>
-          </div>
-
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/javascript-svgrepo-com.svg"
-              alt="Javascript logo in yellow is initals JS"
-            />
-            <p>Javascript</p>
-          </div>
-
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/sass-svgrepo-com.svg"
-              alt="SASS logo"
-            />
-            <p>SASS</p>
-          </div>
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/react-svgrepo-com.svg"
-              alt="React logo showing a blue nucleus"
-            />
-            <p>React</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Back-End tools:</h2>
-        <div class="techstack__list">
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/java-svgrepo-com.svg"
-              alt="Java logo"
-            />
+        <ul class="techstack__list">
+          <li class="techstack__item">
+            <img src="./assets/final/logos/backend/java.svg" alt="Java logo" />
             <p>Java</p>
-          </div>
-          <div class="techstack__item">
+          </li>
+
+          <li class="techstack__item">
             <img
-              src="./assets/final/logos/mysql-official.svg"
+              src="./assets/final/logos/backend/mysql.svg"
               alt="MySQL logo"
             />
             <p>MySQL</p>
-          </div>
-          <div class="techstack__item">
-            <img src="./assets/final/logos/springio-icon.svg" alt="Java logo" />
+          </li>
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/backend/spring.svg"
+              alt="Spring logo"
+            />
             <p>Spring Boot</p>
-          </div>
+          </li>
 
-          <div class="techstack__item">
+          <li class="techstack__item">
             <img
-              src="./assets/final/logos/nextjs-icon.svg"
-              alt="Next JS logo"
+              src="./assets/final/logos/backend/nestjs.svg"
+              alt="Nest JS logo"
             />
-            <p>Next JS</p>
-          </div>
+            <p>Nest JS</p>
+          </li>
+          <li class="techstack__item">
+            <img src="./assets/final/logos/backend/aws.svg" alt="AWS logo" />
+            <p>AWS (EC2/S3)</p>
+          </li>
 
-          <div class="techstack__item">
+          <li class="techstack__item">
             <img
-              src="./assets/final/logos/aws-svgrepo-com.svg"
-              alt="Cloud AWS logo"
+              src="./assets/final/logos/backend/firestore.svg"
+              alt="Firestore logo"
             />
-            <p>Cloud AWS</p>
-          </div>
-        </div>
-      </section>
+            <p>Firestore</p>
+          </li>
+        </ul>
+      </div>
 
-      <section>
-        <h2>Design tools:</h2>
-        <div class="techstack__list">
-          <div class="techstack__item">
+      <div class="techstack__category--frontend">
+        <h2>Front-End</h2>
+
+        <ul class="techstack__list">
+          <li class="techstack__item">
             <img
-              src="./assets/final/logos/Figma_Symbol_0.svg"
-              alt="figma logo"
+              src="./assets/final/logos/frontend/react.svg"
+              alt="React logo showing a blue nucleus"
             />
+            <p>React</p>
+          </li>
+
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/frontend/typescript.svg"
+              alt="Typescript logo"
+            />
+            <p>Typescript</p>
+          </li>
+
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/frontend/javascript.svg"
+              alt="Javascript logo in yellow is initals JS"
+            />
+            <p>Javascript</p>
+          </li>
+
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/frontend/nodejs.svg"
+              alt="Node.js logo"
+            />
+            <p>Node.js</p>
+          </li>
+
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/frontend/html5.svg"
+              alt="HTML logo"
+            />
+            <p>HTML</p>
+          </li>
+
+          <li class="techstack__item">
+            <img src="./assets/final/logos/frontend/css3.svg" alt="CSS logo" />
+            <p>CSS</p>
+          </li>
+
+          <li class="techstack__item">
+            <img src="./assets/final/logos/frontend/sass.svg" alt="SASS logo" />
+            <p>SASS</p>
+          </li>
+
+          <li class="techstack__item">
+            <img
+              src="./assets/final/logos/frontend/tailwind.svg"
+              alt="Tailwind logo"
+            />
+            <p>Tailwind</p>
+          </li>
+
+          <li class="techstack__item">
+            <img src="./assets/final/logos/design/figma.svg" alt="Figma logo" />
             <p>Figma</p>
-          </div>
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/Webflow_Mark_Logo_Blue.svg"
-              alt="Webflow logo"
-            />
-            <p>Webflow</p>
-          </div>
-          <div class="techstack__item">
-            <img
-              src="./assets/final/logos/Miro_Miro_Logo_0.svg"
-              alt="Miro logo"
-            />
-            <p>Miro</p>
-          </div>
-        </div>
-      </section>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="projects" class="projects" aria-labelledby="projects-heading">
@@ -263,7 +308,7 @@
             </a>
             <div class="project__body">
               <h2 id="proj-employee-title" class="project__title">
-                Employee Creator FullStack App
+                Employee Creator API
               </h2>
               <p class="project__summary">
                 Internal HR CRUD tool streamlining record creation with
@@ -420,20 +465,35 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h1>Contact me!</h1>
-      <div id="contact-wrapper">
-        <a href="https://www.linkedin.com/in/carrie-gale/">@ LinkedIn</a>
-        <a href="https://github.com/carriegale2710/">@ GitHub</a>
-      </div>
+      <ul class="contact__list">
+        <li class="contact__list__item">
+          <a href="https://www.linkedin.com/in/carrie-gale/">
+            <img
+              src="./assets/final/logos/contact/linkedin.svg"
+              alt="LinkedIn logo"
+              style="height: 50px; margin-left: 5px"
+            />
+            LinkedIn
+          </a>
+        </li>
+        <li class="contact__list__item">
+          <a href="https://github.com/carriegale2710/">
+            <img
+              src="./assets/final/logos/contact/github.svg"
+              alt="GitHub logo"
+              style="height: 50px; margin-left: 5px"
+            />
+            GitHub
+          </a>
+        </li>
+      </ul>
     </section>
 
     <footer class="footer">
-      <p>
-        Built in HTML/CSS and SASS. <br /><br />
-        Carrie Gale, 2025.
-      </p>
-      <!-- Single logo instance -->
+      <p>Carrie Gale, 2025.</p>
+      <p>Built in HTML/CSS and SASS.</p>
     </footer>
   </body>
 </html>
